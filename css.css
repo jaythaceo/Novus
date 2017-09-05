@@ -1,0 +1,8272 @@
+@charset "UTF-8";
+/*
+Theme Name: Novus Detox
+Theme URI: https://novusdetox.acdev1.com/
+Author: Zazmiс Team
+Author URI: https://www.zazmic.com/
+Description: Custom theme for Novus Detox
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: https://novusdetox.acdev1.com/
+*/
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("assets/fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/OpenSans-Regular/OpenSans-Regular.woff") format("woff"), url("assets/fonts/OpenSans-Regular/OpenSans-Regular.ttf") format("truetype"), url("assets/fonts/OpenSans-Regular/OpenSans-Regular.svg#OpenSans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("assets/fonts/OpenSans-Light/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/OpenSans-Light/OpenSans-Light.woff") format("woff"), url("assets/fonts/OpenSans-Light/OpenSans-Light.ttf") format("truetype"), url("assets/fonts/OpenSans-Light/OpenSans-Light.svg#OpenSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url("assets/fonts/OpenSans-Semibold/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/OpenSans-Semibold/OpenSans-Semibold.woff") format("woff"), url("assets/fonts/OpenSans-Semibold/OpenSans-Semibold.ttf") format("truetype"), url("assets/fonts/OpenSans-Semibold/OpenSans-Semibold.svg#OpenSans-Semibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("assets/fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/OpenSans-Bold/OpenSans-Bold.woff") format("woff"), url("assets/fonts/OpenSans-Bold/OpenSans-Bold.ttf") format("truetype"), url("assets/fonts/OpenSans-Bold/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("assets/fonts/awesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/awesome/fontawesome-webfont.woff") format("woff"), url("assets/fonts/awesome/fontawesome-webfont.ttf") format("truetype"), url("assets/fonts/awesome/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, sass/partials/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, input,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: 300 10px 'OpenSans-Regular';
+  vertical-align: middle;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* line 22, sass/partials/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, sass/partials/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 31, sass/partials/_reset.scss */
+article ul,
+article ol {
+  padding-left: 25px;
+}
+/* line 34, sass/partials/_reset.scss */
+article ul li,
+article ol li {
+  font: 300 1.6em 'OpenSans-Light';
+  color: #535c69;
+  padding: 10px 0;
+  line-height: 25px;
+}
+
+/* line 42, sass/partials/_reset.scss */
+hr {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 48, sass/partials/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 51, sass/partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+}
+
+/* line 55, sass/partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 59, sass/partials/_reset.scss */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+}
+
+/* line 64, sass/partials/_reset.scss */
+button {
+  outline: none;
+  border: none;
+}
+
+/* line 69, sass/partials/_reset.scss */
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+  font-size: 1.0em;
+}
+
+/* line 73, sass/partials/_reset.scss */
+h1 {
+  font-size: 3.2em;
+}
+
+/* line 76, sass/partials/_reset.scss */
+h2 {
+  font-size: 2.4em;
+}
+
+/* line 79, sass/partials/_reset.scss */
+h3 {
+  font-size: 1.9em;
+}
+
+/* line 82, sass/partials/_reset.scss */
+h4 {
+  font-size: 1.6em;
+}
+
+/* line 85, sass/partials/_reset.scss */
+h5 {
+  font-size: 1.3em;
+}
+
+/* line 88, sass/partials/_reset.scss */
+h6 {
+  font-size: 1.1em;
+}
+
+/* line 92, sass/partials/_reset.scss */
+main ul,
+main ol {
+  padding-left: 25px;
+}
+/* line 95, sass/partials/_reset.scss */
+main ul li,
+main ol li {
+  padding: 5px 0;
+  font: 1.6em 'OpenSans-Light';
+}
+/* line 100, sass/partials/_reset.scss */
+main strong {
+  font: 1.0em 'OpenSans-Bold';
+  vertical-align: text-bottom;
+}
+/* line 104, sass/partials/_reset.scss */
+main del, main em {
+  font-size: 1.0em;
+  font-style: italic;
+  vertical-align: text-bottom;
+}
+
+/* Slider */
+/* line 2, sass/partials/_slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 21, sass/partials/_slick.scss */
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 31, sass/partials/_slick.scss */
+.slick-list:focus {
+  outline: none;
+}
+
+/* line 35, sass/partials/_slick.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 41, sass/partials/_slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 51, sass/partials/_slick.scss */
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+/* line 59, sass/partials/_slick.scss */
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+
+/* line 66, sass/partials/_slick.scss */
+.slick-track:after {
+  clear: both;
+}
+
+/* line 70, sass/partials/_slick.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 75, sass/partials/_slick.scss */
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+/* line 83, sass/partials/_slick.scss */
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+/* line 87, sass/partials/_slick.scss */
+.slick-slide img {
+  display: block;
+}
+
+/* line 91, sass/partials/_slick.scss */
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+/* line 95, sass/partials/_slick.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+/* line 99, sass/partials/_slick.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+/* line 103, sass/partials/_slick.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+/* line 107, sass/partials/_slick.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 115, sass/partials/_slick.scss */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* line 119, sass/partials/_slick.scss */
+.slick-loading .slick-list {
+  background: #fff url("assets/images/ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/slick/slick.eot");
+  src: url("assets/fonts/slick/slick.eot?#iefix") format("embedded-opentype"), url("assets/fonts/slick/slick.woff") format("woff"), url("assets/fonts/slick/slick.ttf") format("truetype"), url("assets/fonts/slick/slick.svg#slick") format("svg");
+}
+/* Arrows */
+/* line 135, sass/partials/_slick.scss */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* line 160, sass/partials/_slick.scss */
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+/* line 169, sass/partials/_slick.scss */
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+/* line 176, sass/partials/_slick.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25;
+}
+
+/* line 182, sass/partials/_slick.scss */
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 196, sass/partials/_slick.scss */
+.slick-prev {
+  left: -25px;
+}
+
+/* line 200, sass/partials/_slick.scss */
+[dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto;
+}
+
+/* line 205, sass/partials/_slick.scss */
+.slick-prev:before {
+  content: '←';
+}
+
+/* line 209, sass/partials/_slick.scss */
+[dir='rtl'] .slick-prev:before {
+  content: '→';
+}
+
+/* line 214, sass/partials/_slick.scss */
+.slick-next {
+  right: -25px;
+}
+
+/* line 218, sass/partials/_slick.scss */
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -25px;
+}
+
+/* line 223, sass/partials/_slick.scss */
+.slick-next:before {
+  content: '→';
+}
+
+/* line 227, sass/partials/_slick.scss */
+[dir='rtl'] .slick-next:before {
+  content: '←';
+}
+
+/* Dots */
+/* line 233, sass/partials/_slick.scss */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 238, sass/partials/_slick.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* line 253, sass/partials/_slick.scss */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 266, sass/partials/_slick.scss */
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+/* line 284, sass/partials/_slick.scss */
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+/* line 289, sass/partials/_slick.scss */
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+/* line 294, sass/partials/_slick.scss */
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '\2022';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 316, sass/partials/_slick.scss */
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+/* line 1, sass/components/_footer.scss */
+footer {
+  padding: 10% 0 2% 0;
+  position: relative;
+}
+/* line 4, sass/components/_footer.scss */
+footer:before {
+  content: '';
+  width: 90%;
+  margin: 0 auto;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 25px;
+  display: block;
+  right: 0;
+  background-color: #a7b4a1;
+}
+/* line 16, sass/components/_footer.scss */
+footer .colWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+/* line 20, sass/components/_footer.scss */
+footer .colWrap .column {
+  flex-basis: 25%;
+  text-align: left;
+}
+/* line 24, sass/components/_footer.scss */
+footer .colWrap .column:last-child span {
+  color: #353736;
+  font: 300 1.7em 'OpenSans-Light';
+  margin-bottom: 25px;
+  display: block;
+}
+/* line 31, sass/components/_footer.scss */
+footer .colWrap .column:last-child .btnWrap span {
+  margin: 0;
+}
+/* line 34, sass/components/_footer.scss */
+footer .colWrap .column:last-child .btnWrap a {
+  color: #006653;
+  font: 300 3.0em 'OpenSans-Bold';
+  transition: opacity .3s;
+  position: relative;
+  padding-left: 35px;
+}
+/* line 40, sass/components/_footer.scss */
+footer .colWrap .column:last-child .btnWrap a:before {
+  content: '';
+  width: 26px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background: #ffffff url("assets/images/icons/phoneGreen.png") no-repeat center;
+}
+/* line 49, sass/components/_footer.scss */
+footer .colWrap .column:last-child .btnWrap a:hover {
+  transition: opacity .3s;
+  opacity: .8;
+}
+/* line 56, sass/components/_footer.scss */
+footer .colWrap .column .title {
+  color: #353736;
+  font: 300 2.2em 'OpenSans-Regular';
+  padding-bottom: 15px;
+}
+/* line 61, sass/components/_footer.scss */
+footer .colWrap .column .logo {
+  width: 165px;
+  height: 33px;
+  background: #ffffff url("assets/images/logo.png") no-repeat center;
+  background-size: cover;
+}
+/* line 66, sass/components/_footer.scss */
+footer .colWrap .column .logo + p {
+  color: #616161;
+  padding-right: 45px;
+  font: 300 1.7em 'OpenSans-Regular';
+  margin-top: 25px;
+}
+/* line 73, sass/components/_footer.scss */
+footer .colWrap .column ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* line 76, sass/components/_footer.scss */
+footer .colWrap .column ul li {
+  transition: all .3s;
+}
+/* line 78, sass/components/_footer.scss */
+footer .colWrap .column ul li a {
+  color: #353736;
+  font: 300 1.7em 'OpenSans-Light';
+  display: inline-block;
+  padding: 0 0 10px 0;
+}
+/* line 84, sass/components/_footer.scss */
+footer .colWrap .column ul li:hover {
+  padding-left: 10px;
+  transition: all .3s;
+  opacity: .8;
+}
+/* line 93, sass/components/_footer.scss */
+footer .copyRightLine {
+  text-align: center;
+  padding-top: 2%;
+}
+/* line 96, sass/components/_footer.scss */
+footer .copyRightLine p {
+  color: #3b4643;
+  font: 300 1.2em 'OpenSans-Light';
+}
+/* line 99, sass/components/_footer.scss */
+footer .copyRightLine p a {
+  display: inline-block;
+  vertical-align: text-bottom;
+  color: #2d3533;
+  font: 300 1.0em 'OpenSans-Bold';
+}
+/* line 104, sass/components/_footer.scss */
+footer .copyRightLine p a:hover {
+  color: #3b4643;
+}
+
+/* line 1, sass/components/_header.scss */
+header {
+  padding: 20px 0;
+}
+/* line 3, sass/components/_header.scss */
+header .center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 9, sass/components/_header.scss */
+header .center .logo img {
+  width: 245px;
+}
+/* line 14, sass/components/_header.scss */
+header ul {
+  list-style-type: none;
+}
+/* line 16, sass/components/_header.scss */
+header ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 19, sass/components/_header.scss */
+header ul li.current-menu-item {
+  transition: all .3s;
+}
+/* line 21, sass/components/_header.scss */
+header ul li.current-menu-item a {
+  color: #006653;
+  border-bottom: 2px solid #006653;
+}
+/* line 26, sass/components/_header.scss */
+header ul li:hover {
+  transition: all .3s;
+}
+/* line 28, sass/components/_header.scss */
+header ul li:hover a {
+  color: #006653;
+  border-bottom: 2px solid #006653;
+}
+/* line 33, sass/components/_header.scss */
+header ul li a {
+  padding: 10px 0 2px 0;
+  margin: 0 10px;
+  display: block;
+  font: 600 1.6em 'OpenSans-Regular';
+  color: #5f6365;
+  border-bottom: 2px solid transparent;
+}
+/* line 43, sass/components/_header.scss */
+header .green-btn-phone {
+  padding: 15px 40px 15px 40px;
+}
+/* line 45, sass/components/_header.scss */
+header .green-btn-phone:after {
+  top: 25px;
+}
+/* line 49, sass/components/_header.scss */
+header .burgerWrap {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+/* line 55, sass/components/_header.scss */
+header .burgerWrap .burger {
+  position: relative;
+  background: #006653;
+  width: 40px;
+  height: 3px;
+  top: 50%;
+  right: 0px;
+  margin-top: -5px;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+/* line 66, sass/components/_header.scss */
+header .burgerWrap .burger:before {
+  position: absolute;
+  background: #006653;
+  width: 40px;
+  height: 3px;
+  top: 10px;
+  content: "";
+  display: block;
+}
+/* line 75, sass/components/_header.scss */
+header .burgerWrap .burger:after {
+  position: absolute;
+  background: #006653;
+  width: 40px;
+  height: 3px;
+  bottom: 10px;
+  content: "";
+  display: block;
+}
+/* line 84, sass/components/_header.scss */
+header .burgerWrap .burger:after, header .burgerWrap .burger:before {
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+/* line 91, sass/components/_header.scss */
+header .burgerWrap.menu-on .burger {
+  background: rgba(111, 111, 111, 0);
+}
+/* line 93, sass/components/_header.scss */
+header .burgerWrap.menu-on .burger:after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  bottom: 0px;
+}
+/* line 98, sass/components/_header.scss */
+header .burgerWrap.menu-on .burger:before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  top: 0px;
+}
+/* line 106, sass/components/_header.scss */
+header .btnWrap {
+  display: none;
+  text-align: center;
+  border-top: 1px solid #a7b4a1;
+  padding: 15px 0 0 0;
+  margin: 0 20px;
+}
+/* line 112, sass/components/_header.scss */
+header .btnWrap .green-btn-phone {
+  padding: 5px 25px 5px 50px;
+  font: 300 2.5em "OpenSans-Regular";
+  border-radius: 10px;
+}
+/* line 116, sass/components/_header.scss */
+header .btnWrap .green-btn-phone:after {
+  width: 25px;
+  height: 25px;
+  left: 15px;
+  top: 10px;
+  background-image: url("assets/images/icons/phoneWhite.png");
+  background-size: cover;
+}
+/* line 126, sass/components/_header.scss */
+header .mobileNavLine {
+  display: none;
+}
+
+/* line 1, sass/pages/_home.scss */
+.layoutWrap {
+  position: relative;
+}
+/* line 3, sass/pages/_home.scss */
+.layoutWrap .blackShadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: transparent;
+  opacity: 0;
+  display: none;
+}
+/* line 13, sass/pages/_home.scss */
+.layoutWrap .blackShadow.blackActive {
+  background-color: black;
+  opacity: 0.8;
+  display: block;
+}
+
+/* line 21, sass/pages/_home.scss */
+.item iframe {
+  width: 100%;
+}
+
+/* line 26, sass/pages/_home.scss */
+.initSlick .slick-slide {
+  outline: none !important;
+  -webkit-backface-visibility: hidden !important;
+}
+/* line 29, sass/pages/_home.scss */
+.initSlick .slick-slide * {
+  -webkit-backface-visibility: hidden !important;
+}
+
+/* line 35, sass/pages/_home.scss */
+main h1 {
+  color: #006653;
+  text-align: center;
+  padding: 25% 0;
+}
+/* line 40, sass/pages/_home.scss */
+main .sectionTitle {
+  margin: 0 0 4% 0;
+  padding-top: 2%;
+  color: #239a75;
+  font: 300 5.5em 'OpenSans-Bold';
+  text-align: center;
+  position: relative;
+}
+/* line 47, sass/pages/_home.scss */
+main .sectionTitle:after {
+  position: absolute;
+  content: '';
+  width: 45px;
+  height: 6px;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #239a75;
+}
+/* line 60, sass/pages/_home.scss */
+main .mainBanner .block {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(50% - 2px);
+  height: 420px;
+  padding: 65px 50px;
+}
+/* line 66, sass/pages/_home.scss */
+main .mainBanner .block.pic {
+  background: url("assets/images/mainPhoto1.png") no-repeat center;
+  background-size: cover;
+  background-position: 0% 100%;
+  padding: 40px 50px;
+}
+/* line 71, sass/pages/_home.scss */
+main .mainBanner .block.pic .tm1 {
+  font-size: 0.4em;
+  vertical-align: super;
+}
+/* line 75, sass/pages/_home.scss */
+main .mainBanner .block.pic .tm2 {
+  font-size: 0.5em;
+  vertical-align: super;
+}
+/* line 79, sass/pages/_home.scss */
+main .mainBanner .block.pic h2 {
+  font: 300 5.0em/55px 'OpenSans-Bold';
+  color: #239a75;
+  width: 70%;
+}
+/* line 83, sass/pages/_home.scss */
+main .mainBanner .block.pic h2 p {
+  font-size: 0.5em;
+  padding-top: 45px;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+/* line 91, sass/pages/_home.scss */
+main .mainBanner .block.pic .btnWrap {
+  padding: 10% 0 0 0;
+}
+/* line 94, sass/pages/_home.scss */
+main .mainBanner .block.pic .btnWrap .sqr-btn:first-child {
+  margin-right: 5px;
+  position: relative;
+}
+/* line 97, sass/pages/_home.scss */
+main .mainBanner .block.pic .btnWrap .sqr-btn:first-child:after {
+  position: absolute;
+  right: -23px;
+  top: 10px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  content: 'or';
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #239a75;
+}
+/* line 116, sass/pages/_home.scss */
+main .mainBanner .block.slider {
+  background-color: #006653;
+  margin-left: -3px;
+  position: relative;
+}
+/* line 120, sass/pages/_home.scss */
+main .mainBanner .block.slider .next, main .mainBanner .block.slider .prev {
+  position: absolute;
+  color: #ffffff;
+  bottom: -45px;
+  text-transform: uppercase;
+  font: 300 1.6em 'OpenSans-Regular';
+  cursor: pointer;
+  transition: opacity .3s;
+}
+/* line 128, sass/pages/_home.scss */
+main .mainBanner .block.slider .next:hover, main .mainBanner .block.slider .prev:hover {
+  transition: opacity .3s;
+  opacity: .7;
+}
+/* line 132, sass/pages/_home.scss */
+main .mainBanner .block.slider .next:after, main .mainBanner .block.slider .prev:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 1px;
+  border-top: 10px solid transparent;
+  border-right: 15px solid #ffffff;
+  border-bottom: 10px solid transparent;
+}
+/* line 143, sass/pages/_home.scss */
+main .mainBanner .block.slider .next {
+  right: 40%;
+  padding-right: 20px;
+}
+/* line 146, sass/pages/_home.scss */
+main .mainBanner .block.slider .next:after {
+  content: '';
+  transform: rotate(180deg);
+  right: 0;
+}
+/* line 152, sass/pages/_home.scss */
+main .mainBanner .block.slider .prev {
+  left: 41%;
+  border-right: 2px solid #ffffff;
+  padding: 0 20px;
+}
+/* line 156, sass/pages/_home.scss */
+main .mainBanner .block.slider .prev:after {
+  left: 0;
+}
+/* line 160, sass/pages/_home.scss */
+main .mainBanner .block.slider .initSlick {
+  border: 3px solid #ffffff;
+  visibility: hidden;
+}
+/* line 163, sass/pages/_home.scss */
+main .mainBanner .block.slider .initSlick div {
+  width: 100%;
+  min-height: 250px;
+  background-size: cover !important;
+}
+/* line 168, sass/pages/_home.scss */
+main .mainBanner .block.slider .initSlick .slick-dots {
+  bottom: -45px;
+}
+/* line 172, sass/pages/_home.scss */
+main .mainBanner .block.slider .initSlick .slick-dots li button:before {
+  font-size: 15px;
+}
+/* line 178, sass/pages/_home.scss */
+main .mainBanner .block.slider .initSlick .slick-dots li.slick-active button:before {
+  color: #fff;
+  font-size: 15px;
+}
+/* line 190, sass/pages/_home.scss */
+main .programs {
+  background: url("assets/images/logoBg.png") right no-repeat;
+  text-align: center;
+  background-size: contain;
+}
+/* line 194, sass/pages/_home.scss */
+main .programs .btnWrap {
+  padding-bottom: 10%;
+}
+/* line 197, sass/pages/_home.scss */
+main .programs .btnWrap a:nth-child(2) {
+  margin-left: 30px;
+}
+/* line 203, sass/pages/_home.scss */
+main .detoxProgram {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin: 0 0 10% 3%;
+}
+/* line 208, sass/pages/_home.scss */
+main .detoxProgram img {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 2px);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+/* line 215, sass/pages/_home.scss */
+main .detoxProgram .infoBlock {
+  width: calc(50% - 2px);
+  margin-left: -3px;
+  display: inline-block;
+  text-align: left;
+  padding: 15px 15px 25px 15px;
+  background-color: #006653;
+}
+/* line 222, sass/pages/_home.scss */
+main .detoxProgram .infoBlock p {
+  font: 300 1.8em 'OpenSans-Regular';
+  color: #ffffff;
+}
+/* line 226, sass/pages/_home.scss */
+main .detoxProgram .infoBlock a {
+  color: #ffffff;
+  position: relative;
+  transition: color .3s;
+  font-size: 1.3em;
+}
+/* line 232, sass/pages/_home.scss */
+main .detoxProgram .infoBlock a:nth-child(2):after {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #239a75;
+}
+/* line 241, sass/pages/_home.scss */
+main .detoxProgram .infoBlock a:nth-child(2):hover {
+  transition: color .3s;
+  color: #239a75;
+}
+/* line 249, sass/pages/_home.scss */
+main .difference {
+  background-color: #FFFDFE;
+}
+/* line 251, sass/pages/_home.scss */
+main .difference .center {
+  border-top: 1px solid #a7b4a1;
+  border-bottom: 1px solid #a7b4a1;
+  padding-bottom: 10%;
+}
+/* line 255, sass/pages/_home.scss */
+main .difference .center .differenceBlock {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  margin-right: 6%;
+  text-align: center;
+  vertical-align: top;
+}
+/* line 262, sass/pages/_home.scss */
+main .difference .center .differenceBlock:last-child {
+  margin: 0;
+}
+/* line 265, sass/pages/_home.scss */
+main .difference .center .differenceBlock i {
+  width: 100%;
+  height: 135px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 271, sass/pages/_home.scss */
+main .difference .center .differenceBlock p {
+  color: #353736;
+  font: 300 2.2em 'OpenSans-Regular';
+  margin-bottom: 25px;
+}
+/* line 276, sass/pages/_home.scss */
+main .difference .center .differenceBlock span {
+  color: #353736;
+  font: 300 1.7em 'OpenSans-Light';
+}
+/* line 284, sass/pages/_home.scss */
+main .tradeMarks {
+  text-align: center;
+  padding: 5% 0;
+}
+/* line 287, sass/pages/_home.scss */
+main .tradeMarks .tradeMarkLogo {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 7%;
+}
+/* line 291, sass/pages/_home.scss */
+main .tradeMarks .tradeMarkLogo:last-child {
+  margin: 0;
+}
+/* line 296, sass/pages/_home.scss */
+main .getHelp {
+  min-height: 500px;
+  overflow-x: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+/* line 301, sass/pages/_home.scss */
+main .getHelp.forYou {
+  background: local url("assets/images/menBg.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 600px;
+}
+/* line 305, sass/pages/_home.scss */
+main .getHelp.forYou .textWrap {
+  padding: 5% 4% 5% 5%;
+  left: 0;
+  border-bottom-right-radius: 25px;
+  transform: translateX(-350px);
+  opacity: 0;
+  transition: all 1s;
+}
+/* line 312, sass/pages/_home.scss */
+main .getHelp.forYou .textWrap.scroll-self {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* line 316, sass/pages/_home.scss */
+main .getHelp.forYou .textWrap:after {
+  left: 0;
+  background: local url("assets/images/icons/iconOnSquareOnBlock.png") no-repeat center;
+}
+/* line 322, sass/pages/_home.scss */
+main .getHelp.forFriend {
+  min-height: 600px;
+  background: local url("assets/images/peopleBg.jpg") no-repeat center;
+  background-size: cover;
+}
+/* line 326, sass/pages/_home.scss */
+main .getHelp.forFriend .textWrap {
+  padding: 5% 5% 5% 4%;
+  right: 0;
+  border-bottom-left-radius: 25px;
+  transform: translateX(350px);
+  opacity: 0;
+  transition: all 1s;
+}
+/* line 333, sass/pages/_home.scss */
+main .getHelp.forFriend .textWrap.scroll-friend {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* line 338, sass/pages/_home.scss */
+main .getHelp.forFriend .textWrap:after {
+  right: 0;
+  background: local url("assets/images/icons/iconOnSquareOnBlockMirror.png") no-repeat center;
+}
+/* line 344, sass/pages/_home.scss */
+main .getHelp .textWrap {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  min-height: 575px;
+  background-color: #272a2f;
+}
+/* line 352, sass/pages/_home.scss */
+main .getHelp .textWrap:after {
+  content: '';
+  position: absolute;
+  width: 475px;
+  height: 575px;
+  z-index: 1;
+  bottom: 0;
+}
+/* line 360, sass/pages/_home.scss */
+main .getHelp .textWrap p {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font: 300 5.0em 'OpenSans-Regular';
+  line-height: 1;
+}
+/* line 366, sass/pages/_home.scss */
+main .getHelp .textWrap p span {
+  font: 300 1.0em 'OpenSans-Regular';
+  display: block;
+}
+/* line 371, sass/pages/_home.scss */
+main .getHelp .textWrap > span {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font: 300 1.7em 'OpenSans-Light';
+  margin-top: 35px;
+  display: block;
+}
+/* line 379, sass/pages/_home.scss */
+main .getHelp .textWrap .sqr-btn {
+  display: block;
+  background: transparent;
+  margin-top: 35px;
+  color: #ffffff;
+  font: 300 2.4em 'OpenSans-Regular';
+  position: relative;
+  z-index: 2;
+  padding: 0;
+}
+/* line 388, sass/pages/_home.scss */
+main .getHelp .textWrap .sqr-btn span {
+  font-size: 1.0em;
+  color: #00a472;
+  text-shadow: 0 0 1px #000000;
+}
+/* line 393, sass/pages/_home.scss */
+main .getHelp .textWrap .sqr-btn:hover {
+  background: transparent;
+  opacity: .7;
+}
+/* line 400, sass/pages/_home.scss */
+main .isEasy {
+  text-align: center;
+  padding-bottom: 10%;
+}
+/* line 403, sass/pages/_home.scss */
+main .isEasy .sectionTitle {
+  margin-bottom: 0;
+}
+/* line 405, sass/pages/_home.scss */
+main .isEasy .sectionTitle:after {
+  display: none;
+}
+/* line 408, sass/pages/_home.scss */
+main .isEasy .sectionTitle + span {
+  color: #969c93;
+  display: block;
+  font: 300 2.2em 'OpenSans-Regular';
+  padding: 35px 0 45px 0;
+}
+/* line 416, sass/pages/_home.scss */
+main .insuranceCompanies {
+  text-align: center;
+  padding-bottom: 7%;
+}
+/* line 419, sass/pages/_home.scss */
+main .insuranceCompanies p {
+  color: #353736;
+  padding: 7% 0 60px 0;
+  font: 300 1.6em 'OpenSans-Light';
+}
+/* line 425, sass/pages/_home.scss */
+main .insuranceCompanies .insuranceInitSlick div {
+  height: 50px;
+}
+
+/* line 1, sass/pages/_single.scss */
+.fixedBanner {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 50px;
+  position: fixed;
+  display: none;
+  text-align: center;
+  padding-top: 15px;
+  z-index: 5;
+  background-color: #47187B;
+  color: white;
+}
+/* line 15, sass/pages/_single.scss */
+.fixedBanner p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  font: 300 1.4em 'OpenSans-Regular';
+}
+/* line 21, sass/pages/_single.scss */
+.fixedBanner .green-btn-phone {
+  font-size: 1.4em;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+/* line 26, sass/pages/_single.scss */
+.fixedBanner .green-btn-phone:after {
+  display: none;
+}
+
+/* line 33, sass/pages/_single.scss */
+main .mainContent {
+  padding: 0% 3%;
+}
+/* line 34, sass/pages/_single.scss */
+main .mainContent a {
+  text-decoration: underline;
+}
+/* line 38, sass/pages/_single.scss */
+main .mainContent .contentBlockP .ls-wp-container {
+  width: inherit !important;
+  height: inherit !important;
+}
+/* line 43, sass/pages/_single.scss */
+main .mainContent .contentBlockP div iframe {
+  margin: 20px 0;
+  width: 100%;
+}
+/* line 47, sass/pages/_single.scss */
+main .mainContent .contentBlockP div span {
+  width: 100%;
+}
+/* line 49, sass/pages/_single.scss */
+main .mainContent .contentBlockP div span input {
+  width: 100%;
+}
+/* line 55, sass/pages/_single.scss */
+main .mainContent .contentBlockP b strong {
+  vertical-align: baseline;
+}
+/* line 58, sass/pages/_single.scss */
+main .mainContent .contentBlockP b sup {
+  vertical-align: super;
+}
+/* line 63, sass/pages/_single.scss */
+main .mainContent.commonPage {
+  padding: 10px 3% 9% 3%;
+}
+/* line 67, sass/pages/_single.scss */
+main .mainContent form label {
+  font-size: 1em;
+}
+/* line 69, sass/pages/_single.scss */
+main .mainContent form label input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 0 5px;
+  font-size: 1em;
+  margin-top: 10px;
+}
+/* line 76, sass/pages/_single.scss */
+main .mainContent form label textarea {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 0 5px;
+  font-size: 1em;
+  margin-top: 10px;
+}
+/* line 85, sass/pages/_single.scss */
+main .mainContent form input {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1em;
+  margin-top: 10px;
+}
+/* line 90, sass/pages/_single.scss */
+main .mainContent form input[type="submit"] {
+  color: white;
+  background-color: #135645;
+}
+/* line 97, sass/pages/_single.scss */
+main .mainContent .greenbox p {
+  color: white;
+}
+/* line 100, sass/pages/_single.scss */
+main .mainContent .greenbox a {
+  color: white;
+}
+/* line 103, sass/pages/_single.scss */
+main .mainContent .greenbox strong {
+  color: white;
+}
+/* line 106, sass/pages/_single.scss */
+main .mainContent .greenbox ul, main .mainContent .greenbox ol {
+  color: white;
+}
+/* line 108, sass/pages/_single.scss */
+main .mainContent .greenbox ul li, main .mainContent .greenbox ol li {
+  color: white;
+}
+/* line 113, sass/pages/_single.scss */
+main .mainContent table {
+  margin: 0 auto;
+}
+/* line 116, sass/pages/_single.scss */
+main .mainContent table tr img {
+  float: none;
+  padding: 0;
+}
+/* line 120, sass/pages/_single.scss */
+main .mainContent table tr td {
+  font-size: 0.8em;
+  padding: 4px;
+}
+/* line 126, sass/pages/_single.scss */
+main .mainContent img {
+  float: left;
+  margin: 15px 25px 15px 25px;
+}
+/* line 130, sass/pages/_single.scss */
+main .mainContent h3 {
+  font-size: 1.6em;
+}
+/* line 133, sass/pages/_single.scss */
+main .mainContent h2 {
+  font-size: 1.8em;
+}
+/* line 137, sass/pages/_single.scss */
+main .mainContent b {
+  font-size: 1em;
+  vertical-align: text-top;
+}
+/* line 141, sass/pages/_single.scss */
+main .mainContent h1 {
+  padding: 15px 0 15px 0;
+  color: #339966;
+}
+/* line 145, sass/pages/_single.scss */
+main .mainContent h1 span b {
+  font-size: 1em;
+}
+/* line 150, sass/pages/_single.scss */
+main .mainContent h2, main .mainContent h3, main .mainContent h4 {
+  padding-bottom: 15px;
+  color: #339966;
+}
+/* line 154, sass/pages/_single.scss */
+main .mainContent h2 span b, main .mainContent h3 span b, main .mainContent h4 span b {
+  font-size: 1em;
+}
+/* line 158, sass/pages/_single.scss */
+main .mainContent h2 a, main .mainContent h3 a, main .mainContent h4 a {
+  vertical-align: text-bottom;
+  color: #339966;
+}
+/* line 163, sass/pages/_single.scss */
+main .mainContent a {
+  font-size: 1em;
+  display: inline;
+  padding-bottom: 5px;
+  color: black;
+}
+/* line 168, sass/pages/_single.scss */
+main .mainContent a:hover {
+  color: #339966;
+}
+/* line 172, sass/pages/_single.scss */
+main .mainContent u {
+  font-size: 1em;
+}
+/* line 175, sass/pages/_single.scss */
+main .mainContent i {
+  font-size: 1em;
+}
+/* line 178, sass/pages/_single.scss */
+main .mainContent p {
+  color: black;
+  font: 300 1.8em 'OpenSans-Regular';
+  padding-bottom: 10px;
+}
+/* line 182, sass/pages/_single.scss */
+main .mainContent p iframe {
+  display: block;
+  margin: 0 auto;
+}
+/* line 186, sass/pages/_single.scss */
+main .mainContent p span {
+  font: 300 1.0em 'OpenSans-Regular';
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+/* line 191, sass/pages/_single.scss */
+main .mainContent p i {
+  font-size: 1em;
+  font-style: italic;
+  vertical-align: top;
+}
+/* line 196, sass/pages/_single.scss */
+main .mainContent p em {
+  font-size: 1em;
+  font-style: italic;
+}
+/* line 200, sass/pages/_single.scss */
+main .mainContent p strong {
+  font-size: 1em;
+  font-weight: bold;
+}
+/* line 204, sass/pages/_single.scss */
+main .mainContent p b {
+  font-size: 1em;
+  font-weight: bold;
+}
+/* line 208, sass/pages/_single.scss */
+main .mainContent p a {
+  font-size: 1em;
+  color: #339966;
+  vertical-align: text-bottom;
+}
+/* line 214, sass/pages/_single.scss */
+main .mainContent ul, main .mainContent ol {
+  padding-bottom: 15px;
+}
+/* line 216, sass/pages/_single.scss */
+main .mainContent ul li, main .mainContent ol li {
+  color: black;
+  font-family: 'OpenSans-Regular';
+}
+/* line 217, sass/pages/_single.scss */
+main .mainContent ul li table, main .mainContent ol li table {
+  margin: 15px 0;
+}
+/* line 222, sass/pages/_single.scss */
+main .mainContent ul li a, main .mainContent ol li a {
+  display: inline-block;
+  font-size: 1em;
+  color: #339966;
+  padding-bottom: 3px;
+}
+/* line 227, sass/pages/_single.scss */
+main .mainContent ul li a:hover, main .mainContent ol li a:hover {
+  color: #339966;
+}
+/* line 231, sass/pages/_single.scss */
+main .mainContent ul li i, main .mainContent ol li i {
+  font-size: 1em;
+}
+/* line 234, sass/pages/_single.scss */
+main .mainContent ul li span, main .mainContent ol li span {
+  font-size: 1em;
+}
+/* line 239, sass/pages/_single.scss */
+main .mainContent table {
+  padding-bottom: 15px;
+  border: 1px solid gray;
+}
+/* line 242, sass/pages/_single.scss */
+main .mainContent table tr {
+  border-bottom: 1px solid #c7c7c7;
+}
+/* line 244, sass/pages/_single.scss */
+main .mainContent table tr td {
+  border-left: 1px solid #c7c7c7;
+}
+/* line 249, sass/pages/_single.scss */
+main .mainContent ul {
+  list-style-type: none;
+}
+/* line 251, sass/pages/_single.scss */
+main .mainContent ul li {
+  position: relative;
+  display: table;
+  min-width: 90px;
+}
+/* line 255, sass/pages/_single.scss */
+main .mainContent ul li:after {
+  display: block;
+  content: '\2022';
+  color: #239a75;
+  font-size: 1.6em;
+  position: absolute;
+  top: 0;
+  left: -17px;
+}
+/* line 266, sass/pages/_single.scss */
+main .mainContent ol {
+  list-style-type: decimal;
+}
+/* line 268, sass/pages/_single.scss */
+main .mainContent ol li {
+  position: relative;
+  display: table;
+  min-width: 90px;
+}
+/* line 272, sass/pages/_single.scss */
+main .mainContent ol li:after {
+  display: none;
+  content: '\2022';
+  color: #239a75;
+  font-size: 1.6em;
+  position: absolute;
+  top: 0;
+  left: -17px;
+}
+/* line 284, sass/pages/_single.scss */
+main .postHeader {
+  position: relative;
+  text-align: left;
+  display: flex;
+}
+/* line 290, sass/pages/_single.scss */
+main .postHeader.programs-page .flex.picSide {
+  background: 100% 45% url(assets/images/handsBg.png) no-repeat;
+  background-size: cover;
+}
+/* line 296, sass/pages/_single.scss */
+main .postHeader .flex {
+  flex-basis: 50%;
+  padding: 40px 0;
+}
+/* line 299, sass/pages/_single.scss */
+main .postHeader .flex.greenSide {
+  background-color: #135645;
+  text-align: right;
+}
+/* line 302, sass/pages/_single.scss */
+main .postHeader .flex.greenSide .center {
+  max-width: 660px;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+}
+/* line 307, sass/pages/_single.scss */
+main .postHeader .flex.greenSide .center p {
+  color: #ffffff;
+  font: 300 4.0em 'OpenSans-Bold';
+}
+/* line 311, sass/pages/_single.scss */
+main .postHeader .flex.greenSide .center h1 {
+  color: #ffffff;
+  font: 300 4.0em 'OpenSans-Bold';
+  text-align: left;
+  padding: 0;
+}
+/* line 317, sass/pages/_single.scss */
+main .postHeader .flex.greenSide .center span {
+  color: #00a472;
+  font: 300 2.0em 'OpenSans-Regular';
+}
+/* line 323, sass/pages/_single.scss */
+main .postHeader .flex.picSide {
+  background: 100% 55% url("assets/images/path-trees.jpg") no-repeat;
+  background-size: cover;
+}
+/* line 328, sass/pages/_single.scss */
+main .postHeader:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+}
+/* line 338, sass/pages/_single.scss */
+main .contentBox {
+  overflow: hidden;
+}
+/* line 341, sass/pages/_single.scss */
+main .contentBox .center .contentSide {
+  display: inline-block;
+  width: calc(100% - 370px);
+  vertical-align: top;
+  margin-right: 3%;
+  margin-top: 50px;
+}
+/* line 347, sass/pages/_single.scss */
+main .contentBox .center .contentSide > p {
+  display: block;
+  max-width: 700px;
+  min-width: 200px;
+  width: 100%;
+  font-size: 1.6em;
+  margin: 20px auto 0 auto;
+}
+/* line 356, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock {
+  width: calc(50% - 2px);
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding: 45px;
+  transition: all 0.5s;
+}
+/* line 363, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock:first-child {
+  transform: translateX(-350px);
+  opacity: 0;
+}
+/* line 366, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock:first-child.to-center {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* line 371, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock:last-child {
+  border-left: 1px solid #cfcfcf;
+  transform: translateX(350px);
+  opacity: 0;
+}
+/* line 375, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock:last-child.to-center {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* line 380, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock ul {
+  padding: 0;
+  list-style-type: none;
+}
+/* line 383, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock ul li {
+  margin: 5px 15px;
+  display: block;
+}
+/* line 386, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock ul li a {
+  display: inline-block;
+  font: 300 1.0em 'OpenSans-Regular';
+  color: #00a472;
+}
+/* line 390, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock ul li a:hover {
+  opacity: .7;
+}
+/* line 396, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock .detoxProgram {
+  margin: 0 0 10% 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-content: stretch;
+}
+/* line 404, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock .detoxProgram .flex {
+  position: relative;
+  flex-basis: 50%;
+  -webkit-flex-basis: 50%;
+}
+/* line 408, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock .detoxProgram .flex.infoBlock {
+  background-color: #006653;
+}
+/* line 410, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock .detoxProgram .flex.infoBlock p {
+  padding-bottom: 20%;
+}
+/* line 413, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock .detoxProgram .flex.infoBlock span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* line 419, sass/pages/_single.scss */
+main .contentBox .center .contentSide .getHelp .helpBlock .detoxProgram .flex .detoxPhoto {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: center center no-repeat;
+  background-size: cover;
+  /*width: 100%;
+  height: 100%;*/
+}
+/* line 434, sass/pages/_single.scss */
+main .contentBox .center .contentSide .callBar {
+  background-color: #cfcfcf;
+  padding: 2% 3%;
+}
+/* line 437, sass/pages/_single.scss */
+main .contentBox .center .contentSide .callBar .textWrap {
+  width: calc(100% - 360px);
+}
+/* line 439, sass/pages/_single.scss */
+main .contentBox .center .contentSide .callBar .textWrap p {
+  font: 300 3.5em 'OpenSans-Bold';
+  color: #006653;
+}
+/* line 443, sass/pages/_single.scss */
+main .contentBox .center .contentSide .callBar .textWrap span {
+  color: #666666;
+  font: 300 1.8em 'OpenSans-Regular';
+}
+/* line 448, sass/pages/_single.scss */
+main .contentBox .center .contentSide .callBar .green-btn-phone {
+  font: 300 4.0em "OpenSans-Regular";
+  margin-top: 2%;
+}
+/* line 451, sass/pages/_single.scss */
+main .contentBox .center .contentSide .callBar .green-btn-phone:after {
+  width: 35px;
+  height: 35px;
+  left: 10px;
+  top: 18px;
+  background-size: cover;
+}
+/* line 461, sass/pages/_single.scss */
+main .contentBox .center .contentSide .blog h2 {
+  text-align: center;
+  color: #4d4d4d;
+  margin-top: 35px;
+  font-family: OpenSans-Semibold;
+}
+/* line 467, sass/pages/_single.scss */
+main .contentBox .center .contentSide .blog .articlesWrap {
+  display: flex;
+  align-items: stretch;
+  padding: 5% 3% 7% 3%;
+}
+/* line 471, sass/pages/_single.scss */
+main .contentBox .center .contentSide .blog .articlesWrap article {
+  text-align: left;
+  flex-basis: 40%;
+  padding-right: 20px;
+}
+/* line 475, sass/pages/_single.scss */
+main .contentBox .center .contentSide .blog .articlesWrap article img {
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+}
+/* line 480, sass/pages/_single.scss */
+main .contentBox .center .contentSide .blog .articlesWrap article p {
+  color: #4d4d4d;
+  font: 600 2.4em 'OpenSans-Regular';
+}
+/* line 484, sass/pages/_single.scss */
+main .contentBox .center .contentSide .blog .articlesWrap article span {
+  display: block;
+  padding: 20px 0 15px 0;
+  color: #666;
+  font: 300 1.8em 'OpenSans-Light';
+}
+/* line 490, sass/pages/_single.scss */
+main .contentBox .center .contentSide .blog .articlesWrap article a {
+  color: #239a75;
+  font: 600 2em 'OpenSans-Regular';
+  position: relative;
+  transition: color .3s;
+}
+/* line 495, sass/pages/_single.scss */
+main .contentBox .center .contentSide .blog .articlesWrap article a:after {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #239a75;
+}
+/* line 504, sass/pages/_single.scss */
+main .contentBox .center .contentSide .blog .articlesWrap article a:hover {
+  transition: color .3s;
+  color: #666;
+}
+/* line 512, sass/pages/_single.scss */
+main .contentBox .center .contentSide .subscribe {
+  background-color: #272a2f;
+  padding: 2% 0;
+}
+/* line 515, sass/pages/_single.scss */
+main .contentBox .center .contentSide .subscribe .inputsWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 519, sass/pages/_single.scss */
+main .contentBox .center .contentSide .subscribe .inputsWrap .inputBox {
+  position: relative;
+  padding: 25px;
+}
+/* line 522, sass/pages/_single.scss */
+main .contentBox .center .contentSide .subscribe .inputsWrap .inputBox:last-child {
+  border-left: 1px solid #ffffff;
+}
+/* line 525, sass/pages/_single.scss */
+main .contentBox .center .contentSide .subscribe .inputsWrap .inputBox label {
+  color: #ffffff;
+  font: 300 2.0em 'OpenSans-Regular';
+  display: block;
+}
+/* line 530, sass/pages/_single.scss */
+main .contentBox .center .contentSide .subscribe .inputsWrap .inputBox input {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 8px 15px;
+  font: 300 1.8em 'OpenSans-Regular';
+}
+/* line 537, sass/pages/_single.scss */
+main .contentBox .center .contentSide .subscribe .inputsWrap .inputBox .send {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  background-color: #00a472;
+}
+/* line 549, sass/pages/_single.scss */
+main .contentBox .center .communicationsSidebar {
+  display: inline-block;
+  border-left: 1px solid #cfcfcf;
+  width: 320px;
+  padding: 0 0 0 35px;
+  vertical-align: top;
+}
+/* line 555, sass/pages/_single.scss */
+main .contentBox .center .communicationsSidebar .insuranceCompanies {
+  margin-top: 25px;
+  border: none;
+}
+/* line 558, sass/pages/_single.scss */
+main .contentBox .center .communicationsSidebar .insuranceCompanies div {
+  margin-top: 15px;
+}
+/* line 563, sass/pages/_single.scss */
+main .contentBox .center .communicationsSidebar .tradeMarks .tradeMarkLogo {
+  margin: 55px 0 0 0;
+}
+/* line 565, sass/pages/_single.scss */
+main .contentBox .center .communicationsSidebar .tradeMarks .tradeMarkLogo img {
+  max-width: 100%;
+}
+/* line 573, sass/pages/_single.scss */
+main .why-novus-block {
+  width: 100%;
+  min-height: 50px;
+}
+/* line 576, sass/pages/_single.scss */
+main .why-novus-block .center {
+  padding: 0;
+  min-width: 200px;
+}
+/* line 580, sass/pages/_single.scss */
+main .why-novus-block .why-novus-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px 0;
+}
+/* line 587, sass/pages/_single.scss */
+main .why-novus-block .why-novus-items .novus-logo-item {
+  max-width: 240px;
+  min-width: 200px;
+  width: 100%;
+  height: 240px;
+  background: center center url("assets/images/icons/novusDetoxPic.png") no-repeat;
+  background-size: cover;
+}
+/* line 595, sass/pages/_single.scss */
+main .why-novus-block .why-novus-items .novus-content-item {
+  margin-left: 20px;
+  width: calc(100% - 260px);
+}
+/* line 598, sass/pages/_single.scss */
+main .why-novus-block .why-novus-items .novus-content-item span {
+  color: #30312f;
+  display: block;
+}
+/* line 601, sass/pages/_single.scss */
+main .why-novus-block .why-novus-items .novus-content-item span:first-child {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+/* line 605, sass/pages/_single.scss */
+main .why-novus-block .why-novus-items .novus-content-item span:nth-child(2) {
+  font-size: 1.8em;
+  margin: 10px 0;
+}
+/* line 610, sass/pages/_single.scss */
+main .why-novus-block .why-novus-items .novus-content-item a {
+  color: #00a472;
+  font-size: 2.5em;
+  position: relative;
+}
+/* line 614, sass/pages/_single.scss */
+main .why-novus-block .why-novus-items .novus-content-item a:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 65px;
+  height: 5px;
+  background-color: #00a472;
+  top: 40px;
+  left: 0;
+}
+/* line 628, sass/pages/_single.scss */
+main .programs-bottom-block {
+  width: 100%;
+  min-height: 50px;
+}
+/* line 631, sass/pages/_single.scss */
+main .programs-bottom-block .center {
+  padding: 0;
+  min-width: 200px;
+}
+/* line 637, sass/pages/_single.scss */
+main .programs-bottom-block.studies .programs-bottom-items .programs-bottom-photo-item {
+  height: 280px;
+  background: center center url(assets/images/novusFamily.png) no-repeat;
+  background-size: cover;
+}
+/* line 642, sass/pages/_single.scss */
+main .programs-bottom-block.studies .programs-bottom-items .programs-bottom-content-item {
+  height: 280px;
+}
+/* line 644, sass/pages/_single.scss */
+main .programs-bottom-block.studies .programs-bottom-items .programs-bottom-content-item span {
+  color: white;
+  display: block;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+/* line 649, sass/pages/_single.scss */
+main .programs-bottom-block.studies .programs-bottom-items .programs-bottom-content-item span:nth-child(2) {
+  font-size: 2.2em;
+  margin: 10px 0 0 0;
+}
+/* line 653, sass/pages/_single.scss */
+main .programs-bottom-block.studies .programs-bottom-items .programs-bottom-content-item span:nth-child(3) {
+  font-size: 1.6em;
+  margin: 10px 0;
+}
+/* line 661, sass/pages/_single.scss */
+main .programs-bottom-block .programs-bottom-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px 0;
+}
+/* line 668, sass/pages/_single.scss */
+main .programs-bottom-block .programs-bottom-items .programs-bottom-photo-item {
+  width: 260px;
+  height: 216px;
+  background: center center url(assets/images/mainPhoto.jpg) no-repeat;
+  background-size: cover;
+}
+/* line 674, sass/pages/_single.scss */
+main .programs-bottom-block .programs-bottom-items .programs-bottom-content-item {
+  padding: 20px;
+  width: calc(100% - 300px);
+  background-color: #0a5646;
+  height: 216px;
+}
+/* line 679, sass/pages/_single.scss */
+main .programs-bottom-block .programs-bottom-items .programs-bottom-content-item span {
+  color: white;
+  display: block;
+}
+/* line 682, sass/pages/_single.scss */
+main .programs-bottom-block .programs-bottom-items .programs-bottom-content-item span:first-child {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+/* line 686, sass/pages/_single.scss */
+main .programs-bottom-block .programs-bottom-items .programs-bottom-content-item span:nth-child(2) {
+  font-size: 1.6em;
+  margin: 10px 0;
+}
+/* line 691, sass/pages/_single.scss */
+main .programs-bottom-block .programs-bottom-items .programs-bottom-content-item a {
+  color: #00a472;
+  font-size: 2em;
+  position: relative;
+  display: block;
+  padding-bottom: 20px;
+}
+/* line 697, sass/pages/_single.scss */
+main .programs-bottom-block .programs-bottom-items .programs-bottom-content-item a:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 65px;
+  height: 5px;
+  background-color: #00a472;
+  top: 40px;
+  left: 0;
+}
+
+/* line 1, sass/pages/_verification-form.scss */
+.contact-from {
+  position: relative;
+}
+/* line 3, sass/pages/_verification-form.scss */
+.contact-from:before {
+  content: '';
+  width: 90%;
+  margin: 0 auto;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: -11px;
+  display: block;
+  right: 0;
+  background-color: #a7b4a1;
+}
+/* line 15, sass/pages/_verification-form.scss */
+.contact-from .contact-form-content {
+  padding-top: 10px;
+}
+/* line 17, sass/pages/_verification-form.scss */
+.contact-from .contact-form-content h3 {
+  padding: 20px 0;
+  display: block;
+}
+/* line 21, sass/pages/_verification-form.scss */
+.contact-from .contact-form-content p {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+/* line 25, sass/pages/_verification-form.scss */
+.contact-from .contact-form-content form {
+  padding: 20px 0;
+  font-family: OpenSans-Regular;
+}
+/* line 28, sass/pages/_verification-form.scss */
+.contact-from .contact-form-content form p {
+  display: block;
+  max-width: 700px;
+  min-width: 250px;
+  width: 100%;
+  margin: 0 auto 10px auto;
+}
+/* line 34, sass/pages/_verification-form.scss */
+.contact-from .contact-form-content form p label {
+  font-size: 1em;
+}
+/* line 38, sass/pages/_verification-form.scss */
+.contact-from .contact-form-content form p label span.wpcf7-form-control-wrap input, .contact-from .contact-form-content form p label span.wpcf7-form-control-wrap textarea {
+  border-radius: 8px;
+  padding: 6px 0 6px 12px;
+  border: 2px solid #dfdfdf;
+  font-size: 1.7em;
+  font-family: OpenSans-Regular;
+  color: #b5b5b5;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+/* line 52, sass/pages/_verification-form.scss */
+.contact-from .contact-form-content form p input[type="submit"] {
+  font: 300 1em 'OpenSans-Regular';
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #0a5646;
+  padding: 10px 25px;
+  transition: all .3s;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+/* line 62, sass/pages/_verification-form.scss */
+.contact-from .contact-form-content form p input[type="submit"]:hover {
+  background-color: #0d7f69;
+}
+
+/* line 1, sass/pages/_404.scss */
+.wrap404 {
+  min-height: 650px;
+  background: local url("assets/images/404.jpg") no-repeat center;
+}
+/* line 4, sass/pages/_404.scss */
+.wrap404 h1 {
+  color: #535c69;
+  font: 300 7.2em 'OpenSans-Semibold';
+  text-align: center;
+  padding-top: 15%;
+}
+/* line 10, sass/pages/_404.scss */
+.wrap404 p {
+  color: #535c69;
+  text-align: center;
+  padding-top: 40px;
+  font: 300 3.0em 'OpenSans-Semibold';
+  text-transform: uppercase;
+}
+/* line 17, sass/pages/_404.scss */
+.wrap404 span {
+  display: block;
+  padding-top: 40px;
+  text-align: center;
+  font: 300 2.4em 'OpenSans-Light';
+}
+/* line 22, sass/pages/_404.scss */
+.wrap404 span a {
+  color: #4185c4;
+  font: 300 1.0em 'OpenSans-Light';
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+/* line 27, sass/pages/_404.scss */
+.wrap404 span a:hover {
+  color: #2a5780;
+}
+
+/* line 2, sass/pages/_program.scss */
+main .cta-block {
+  width: 100%;
+  position: relative;
+  margin: 15px 0;
+}
+/* line 6, sass/pages/_program.scss */
+main .cta-block:before {
+  position: absolute;
+  right: 84px;
+  display: block;
+  content: '';
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #3a3c42, transparent);
+  width: 150px;
+  z-index: 1;
+}
+/* line 17, sass/pages/_program.scss */
+main .cta-block .content-cta {
+  border-radius: 60px;
+  text-align: center;
+  padding-right: 25%;
+  background: #3a3c42;
+}
+/* line 22, sass/pages/_program.scss */
+main .cta-block .content-cta span {
+  display: block;
+  color: white;
+}
+/* line 25, sass/pages/_program.scss */
+main .cta-block .content-cta span:first-of-type {
+  font-size: 3em;
+  padding-top: 10px;
+}
+/* line 28, sass/pages/_program.scss */
+main .cta-block .content-cta span:first-of-type span {
+  color: #29966a;
+  display: inline;
+  font-size: 1em;
+  vertical-align: baseline;
+  padding-top: 0;
+}
+/* line 36, sass/pages/_program.scss */
+main .cta-block .content-cta span:nth-of-type(2) {
+  font-size: 1.4em;
+}
+/* line 40, sass/pages/_program.scss */
+main .cta-block .content-cta a {
+  display: block;
+  color: #29966a;
+  padding-bottom: 10px;
+  font-size: 3em !important;
+}
+/* line 45, sass/pages/_program.scss */
+main .cta-block .content-cta a:hover {
+  color: white;
+}
+/* line 50, sass/pages/_program.scss */
+main .cta-block .photo-cta {
+  position: absolute;
+  background: url(assets/images/aborto-legal.jpg) no-repeat;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  width: 233px;
+  background-size: contain;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+/* line 62, sass/pages/_program.scss */
+main .getBackNumber {
+  background: #f6f6f6;
+  margin: 18% 0 7% 0;
+}
+/* line 65, sass/pages/_program.scss */
+main .getBackNumber .contentItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 20px;
+  flex-wrap: wrap;
+}
+/* line 72, sass/pages/_program.scss */
+main .getBackNumber .contentItems .contentItem.leftSide {
+  width: calc(100% - 310px);
+  max-width: 800px;
+  min-width: 210px;
+}
+/* line 77, sass/pages/_program.scss */
+main .getBackNumber .contentItems .contentItem span {
+  display: inline-block;
+  font-family: OpenSans-Bold;
+  font-size: 2.6em;
+  color: #239a75;
+}
+/* line 83, sass/pages/_program.scss */
+main .getBackNumber .contentItems .contentItem p {
+  display: inline-block;
+  font-size: 1.6em;
+  color: #969c93;
+}
+/* line 88, sass/pages/_program.scss */
+main .getBackNumber .contentItems .contentItem a {
+  font-size: 3.3em;
+  color: white;
+  font-family: OpenSans-Bold;
+}
+/* line 92, sass/pages/_program.scss */
+main .getBackNumber .contentItems .contentItem a.phoneBlock {
+  background: #239a75;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+/* line 103, sass/pages/_program.scss */
+main .getBackNumber .contentItems .contentItem a.phoneBlock:hover {
+  background: transparent;
+  color: #239a75;
+}
+/* line 112, sass/pages/_program.scss */
+main .topProgramLine {
+  width: 100%;
+  height: 230px;
+  background: 80% 49% url("assets/images/handsBg.png") no-repeat;
+  background-size: cover;
+  clear: both;
+}
+/* line 118, sass/pages/_program.scss */
+main .topProgramLine .btnWrap {
+  padding: 10% 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 123, sass/pages/_program.scss */
+main .topProgramLine .btnWrap .sqr-btn:first-child {
+  margin-right: 5px;
+  position: relative;
+}
+/* line 126, sass/pages/_program.scss */
+main .topProgramLine .btnWrap .sqr-btn:first-child:after {
+  position: absolute;
+  right: -23px;
+  top: 10px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  content: 'or';
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #239a75;
+}
+/* line 146, sass/pages/_program.scss */
+main .contentBox .programSide {
+  display: inline-block;
+  width: calc(100% - 370px);
+  vertical-align: top;
+  margin-right: 3%;
+  margin-top: 45px;
+}
+/* line 152, sass/pages/_program.scss */
+main .contentBox .programSide ul {
+  list-style-type: none;
+  margin-left: 25px;
+  padding: 10px 0;
+}
+/* line 156, sass/pages/_program.scss */
+main .contentBox .programSide ul li {
+  line-height: 1.5em;
+  font-family: OpenSans-Light;
+  color: #333333;
+  position: relative;
+}
+/* line 161, sass/pages/_program.scss */
+main .contentBox .programSide ul li:after {
+  display: block;
+  content: '\2022';
+  color: #239a75;
+  font-size: 2.2em;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+}
+/* line 172, sass/pages/_program.scss */
+main .contentBox .programSide ol {
+  margin-left: 10px;
+  padding: 10px 0;
+}
+/* line 175, sass/pages/_program.scss */
+main .contentBox .programSide ol li {
+  line-height: 1.5em;
+  font-family: OpenSans-Light;
+  color: #333333;
+}
+/* line 181, sass/pages/_program.scss */
+main .contentBox .programSide p {
+  font-size: 1.8em;
+  color: #333333;
+  line-height: 1.5;
+  font-family: OpenSans-Light;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* line 190, sass/pages/_program.scss */
+main .contentBox .programSide span.titlePr {
+  color: #239a75;
+  font-size: 3.6em;
+  text-align: left;
+  margin: 25px 0;
+  font-family: OpenSans-Bold;
+  display: block;
+}
+/* line 199, sass/pages/_program.scss */
+main .contentBox .programSide .detoxQuestion {
+  padding-bottom: 30px;
+}
+/* line 201, sass/pages/_program.scss */
+main .contentBox .programSide .detoxQuestion p {
+  font-family: OpenSans-Bold;
+  font-size: 5em;
+  color: #444444;
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+}
+/* line 209, sass/pages/_program.scss */
+main .contentBox .programSide .detoxQuestion h2 {
+  line-height: 1.5;
+  color: #353736;
+  display: inline-block;
+  margin-top: 30px;
+}
+/* line 215, sass/pages/_program.scss */
+main .contentBox .programSide .detoxQuestion .detoxLinks {
+  margin-top: 60px;
+  text-align: center;
+  width: 98%;
+}
+/* line 219, sass/pages/_program.scss */
+main .contentBox .programSide .detoxQuestion .detoxLinks a {
+  font-family: OpenSans-Bold;
+  font-size: 2.4em;
+  color: #239a75;
+  display: inline-block;
+  padding: 20px 0 0 0;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s;
+  position: relative;
+  text-transform: uppercase;
+  /*&:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 0;
+    border: 1px solid #444444;
+    right: -12px;
+    top: 24px;
+  }
+  &:nth-child(3) {
+    &:after {
+      display: none;
+    }
+  }
+  &:nth-child(6) {
+    &:after {
+      display: none;
+    }
+  }
+  &:nth-child(8) {
+    &:after {
+      display: none;
+    }
+  }*/
+}
+/* line 255, sass/pages/_program.scss */
+main .contentBox .programSide .detoxQuestion .detoxLinks a:hover {
+  border-bottom: 2px solid #239a75;
+}
+/* line 262, sass/pages/_program.scss */
+main .contentBox .programSide .detoxSolution {
+  padding: 40px 0;
+}
+/* line 264, sass/pages/_program.scss */
+main .contentBox .programSide .detoxSolution .videoPr {
+  max-width: 470px;
+  min-width: 250px;
+  width: 100%;
+  float: right;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 31.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 10px 0 10px 20px;
+}
+/* line 276, sass/pages/_program.scss */
+main .contentBox .programSide .detoxSolution .videoPr iframe, main .contentBox .programSide .detoxSolution .videoPr object, main .contentBox .programSide .detoxSolution .videoPr embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 284, sass/pages/_program.scss */
+main .contentBox .programSide .detoxSolution p {
+  display: flex;
+}
+/* line 287, sass/pages/_program.scss */
+main .contentBox .programSide .detoxSolution h3 {
+  color: #239a75;
+}
+/* line 289, sass/pages/_program.scss */
+main .contentBox .programSide .detoxSolution h3 span {
+  margin-top: 10px;
+  font-family: OpenSans-Bold;
+}
+/* line 295, sass/pages/_program.scss */
+main .contentBox .programSide .detoxSolution ul li {
+  display: flex;
+}
+/* line 300, sass/pages/_program.scss */
+main .contentBox .programSide .bestPrograms {
+  padding-bottom: 40px;
+}
+/* line 302, sass/pages/_program.scss */
+main .contentBox .programSide .bestPrograms ul {
+  list-style-position: inside;
+  -moz-column-count: 2;
+  /* Firefox */
+  -webkit-column-count: 2;
+  /* Safari and Chrome */
+  column-count: 2;
+  max-height: 1500px;
+}
+/* line 310, sass/pages/_program.scss */
+main .contentBox .programSide .detoxDifference {
+  padding-bottom: 40px;
+}
+/* line 313, sass/pages/_program.scss */
+main .contentBox .programSide .detoxDifference ul li {
+  color: #222222;
+  font-weight: 800;
+}
+/* line 320, sass/pages/_program.scss */
+main .contentBox .communicationsSidebar {
+  margin-top: 45px;
+}
+
+/* line 3, sass/pages/_search.scss */
+main .title-block .center {
+  position: relative;
+}
+/* line 5, sass/pages/_search.scss */
+main .title-block .center:before {
+  content: '';
+  width: 90%;
+  margin: 0 auto;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 35px;
+  display: block;
+  right: 0;
+  background-color: #a7b4a1;
+}
+/* line 17, sass/pages/_search.scss */
+main .title-block .center:after {
+  content: '';
+  width: 90%;
+  margin: 0 auto;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  bottom: 35px;
+  display: block;
+  right: 0;
+  background-color: #a7b4a1;
+}
+/* line 29, sass/pages/_search.scss */
+main .title-block .center span {
+  font-size: 1.8em;
+  display: block;
+  margin: 25px 0;
+}
+/* line 39, sass/pages/_search.scss */
+main .search-page .center .search-items .search-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 40, sass/pages/_search.scss */
+main .search-page .center .search-items .search-item a {
+  font-size: 1.8em;
+  color: #0a7665;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* line 46, sass/pages/_search.scss */
+main .search-page .center .search-items .search-item p {
+  font-size: 1.5em;
+}
+/* line 48, sass/pages/_search.scss */
+main .search-page .center .search-items .search-item p a {
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+/* line 55, sass/pages/_search.scss */
+main .search-page .center .search-items .search-item:after {
+  content: '';
+  width: 90%;
+  margin: 0 auto;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  bottom: -10px;
+  display: block;
+  right: 0;
+  background-color: #a7b4a1;
+}
+
+/* line 2, sass/pages/_blog.scss */
+.navigation.pagination {
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* line 5, sass/pages/_blog.scss */
+.navigation.pagination .screen-reader-text {
+  display: none;
+}
+/* line 8, sass/pages/_blog.scss */
+.navigation.pagination .page-numbers {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #d5d5d5;
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-right: 10px;
+}
+/* line 17, sass/pages/_blog.scss */
+.navigation.pagination .page-numbers:hover {
+  color: white;
+  background: #3b8576;
+  border: none;
+  padding-top: 12px;
+}
+/* line 23, sass/pages/_blog.scss */
+.navigation.pagination .page-numbers:last-child {
+  margin-right: 0;
+}
+/* line 26, sass/pages/_blog.scss */
+.navigation.pagination .page-numbers.next {
+  border: none;
+  width: auto;
+  padding-top: 12px;
+  border-bottom: 2px solid transparent;
+}
+/* line 31, sass/pages/_blog.scss */
+.navigation.pagination .page-numbers.next:hover {
+  color: black;
+  background: white;
+  border-bottom: 2px solid #3b8576;
+  padding-top: 12px;
+}
+/* line 38, sass/pages/_blog.scss */
+.navigation.pagination .page-numbers.prev {
+  border: none;
+  width: auto;
+  padding-top: 12px;
+  border-bottom: 2px solid transparent;
+}
+/* line 43, sass/pages/_blog.scss */
+.navigation.pagination .page-numbers.prev:hover {
+  color: black;
+  background: white;
+  border-bottom: 2px solid #3b8576;
+  padding-top: 12px;
+}
+/* line 51, sass/pages/_blog.scss */
+.navigation.pagination .page-numbers.dots:hover {
+  color: black;
+  background: white;
+  border: 2px solid #d5d5d5;
+  padding-top: 10px;
+}
+/* line 58, sass/pages/_blog.scss */
+.navigation.pagination .page-numbers.current {
+  color: white;
+  background: #3b8576;
+  border: none;
+  padding-top: 12px;
+}
+
+/* line 70, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide {
+  margin-top: 70px;
+}
+/* line 73, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem {
+  width: 100%;
+  padding-bottom: 20px;
+}
+/* line 76, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .phoneNovus {
+  background: #f6f6f6;
+  margin: 5% 0 5% 0;
+}
+/* line 79, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .phoneNovus .contentItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 20px;
+  flex-wrap: wrap;
+}
+/* line 86, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .phoneNovus .contentItems .contentItem.leftSide {
+  width: calc(100% - 310px);
+  max-width: 800px;
+  min-width: 210px;
+}
+/* line 91, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .phoneNovus .contentItems .contentItem span {
+  display: inline-block;
+  font-family: OpenSans-Bold;
+  font-size: 2.6em;
+  color: #239a75;
+}
+/* line 97, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .phoneNovus .contentItems .contentItem p {
+  display: inline-block;
+  font-size: 1.6em;
+  color: #969c93;
+}
+/* line 102, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .phoneNovus .contentItems .contentItem a {
+  font-size: 3.3em;
+  color: white;
+  font-family: OpenSans-Bold;
+}
+/* line 106, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .phoneNovus .contentItems .contentItem a.phoneBlock {
+  background: #239a75;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+/* line 117, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .phoneNovus .contentItems .contentItem a.phoneBlock:hover {
+  background: transparent;
+  color: #239a75;
+}
+/* line 126, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogPhoto {
+  width: 100%;
+  max-width: 345px;
+  min-width: 250px;
+  height: 345px;
+  float: left;
+  margin: 0 50px 10px 0;
+  background-size: contain;
+}
+/* line 136, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogTitleText span {
+  position: relative;
+}
+/* line 138, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogTitleText span a {
+  color: #333333;
+  display: flex;
+  line-height: 1.5;
+  font-family: OpenSans-Semibold;
+  font-size: 1em;
+  margin: 30px 0 15px 0;
+}
+/* line 146, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogTitleText span:first-child {
+  font-size: 3em;
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+}
+/* line 151, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogTitleText span:first-child:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  border: 1px solid #239a75;
+  background: #239a75;
+  bottom: -5px;
+}
+/* line 162, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogTitleText span:nth-child(2) {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+  display: flex;
+  font-weight: 600;
+}
+/* line 170, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogTitleText.noPic span {
+  display: inline-block;
+}
+/* line 172, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogTitleText.noPic span:first-child {
+  display: block;
+}
+/* line 175, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogTitleText.noPic span:nth-child(2) {
+  margin-bottom: 0;
+}
+/* line 178, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogTitleText.noPic span:nth-child(3) {
+  font-size: 1.6em;
+  margin-left: 10px;
+}
+/* line 181, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogTitleText.noPic span:nth-child(3):before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 12px;
+  left: -7px;
+  top: 5px;
+  border: 1px solid black;
+  position: absolute;
+}
+/* line 193, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogTitleText.noPic span.tagsLink {
+  font-size: 1.6em;
+  margin-left: 10px;
+}
+/* line 196, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogTitleText.noPic span.tagsLink:before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 12px;
+  left: -7px;
+  top: 5px;
+  border: 1px solid black;
+  position: absolute;
+}
+/* line 211, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .clear-fix {
+  clear: both;
+  height: 10px;
+}
+/* line 215, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogCatTags {
+  display: block;
+}
+/* line 217, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogCatTags span {
+  display: inline-block;
+  font-size: 1.6em;
+  font-family: OpenSans-Regular;
+  margin-bottom: 5px;
+}
+/* line 223, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogCatTags a {
+  display: inline-block;
+  font-size: 1.6em;
+  font-family: OpenSans-Regular;
+  margin-bottom: 5px;
+  color: #239a75;
+  position: relative;
+}
+/* line 232, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogComments {
+  display: block;
+}
+/* line 234, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogComments a {
+  font-size: 1em;
+}
+/* line 236, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .blogComments a span {
+  display: inline-block;
+  font-size: 1.6em;
+  font-family: OpenSans-Regular;
+  margin-bottom: 5px;
+  color: #239a75;
+}
+/* line 245, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem p {
+  display: inline;
+  font-size: 1.6em;
+  font-family: OpenSans-Regular;
+}
+/* line 250, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem a {
+  display: inline-block;
+  font-size: 1.6em;
+  font-family: OpenSans-Regular;
+  color: #239a75;
+}
+/* line 257, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .socialBlock a {
+  width: 50px;
+  height: 30px;
+  color: white;
+  text-align: center;
+}
+/* line 263, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .socialBlock a i.fa {
+  font-size: 1.2em;
+  vertical-align: sub;
+}
+/* line 268, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .socialBlock a:first-child {
+  background-color: #3b579c;
+}
+/* line 271, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .socialBlock a:nth-child(2) {
+  background-color: #50adf2;
+}
+/* line 274, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .socialBlock a:nth-child(3) {
+  background-color: #0074b6;
+}
+/* line 277, sass/pages/_blog.scss */
+main .contentBox .center .aboutSide .blogItems .blogItem .socialBlock a:nth-child(4) {
+  background-color: #e04832;
+}
+/* line 285, sass/pages/_blog.scss */
+main .contentBox .center .communicationsSidebar {
+  margin-top: 70px;
+}
+
+/* line 2, sass/pages/_aboutUs.scss */
+main .phoneNovus {
+  background: #f6f6f6;
+  margin: 5% 0 5% 0;
+}
+/* line 5, sass/pages/_aboutUs.scss */
+main .phoneNovus .contentItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 20px;
+  flex-wrap: wrap;
+}
+/* line 12, sass/pages/_aboutUs.scss */
+main .phoneNovus .contentItems .contentItem.leftSide {
+  width: calc(100% - 310px);
+  max-width: 800px;
+  min-width: 210px;
+}
+/* line 17, sass/pages/_aboutUs.scss */
+main .phoneNovus .contentItems .contentItem span {
+  display: inline-block;
+  font-family: OpenSans-Bold;
+  font-size: 2.6em;
+  color: #239a75;
+}
+/* line 23, sass/pages/_aboutUs.scss */
+main .phoneNovus .contentItems .contentItem p {
+  display: inline-block;
+  font-size: 1.6em;
+  color: #969c93;
+}
+/* line 28, sass/pages/_aboutUs.scss */
+main .phoneNovus .contentItems .contentItem a {
+  font-size: 3.3em;
+  color: white;
+  font-family: OpenSans-Bold;
+}
+/* line 32, sass/pages/_aboutUs.scss */
+main .phoneNovus .contentItems .contentItem a.phoneBlock {
+  background: #239a75;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+/* line 43, sass/pages/_aboutUs.scss */
+main .phoneNovus .contentItems .contentItem a.phoneBlock:hover {
+  background: transparent;
+  color: #239a75;
+}
+/* line 55, sass/pages/_aboutUs.scss */
+main .postHeader.aboutPage .flex.picSide {
+  background: 100% 55% url(assets/images/path-trees.jpg) no-repeat;
+  background-size: cover;
+}
+/* line 63, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide {
+  display: inline-block;
+  width: calc(100% - 370px);
+  vertical-align: top;
+  margin-right: 3%;
+  margin-top: 45px;
+}
+/* line 66, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide .mainContent p iframe {
+  float: left;
+  margin-right: 40px;
+}
+/* line 72, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide ul {
+  list-style-type: none;
+  margin-left: 25px;
+  padding: 10px 0;
+}
+/* line 76, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide ul li {
+  line-height: 1.5em;
+  font-family: OpenSans-Light;
+  color: #333333;
+  position: relative;
+}
+/* line 81, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide ul li:after {
+  display: block;
+  content: '\2022';
+  color: #239a75;
+  font-size: 2.2em;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+}
+/* line 92, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide ol {
+  margin-left: 10px;
+  padding: 10px 0;
+}
+/* line 95, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide ol li {
+  line-height: 1.5em;
+  font-family: OpenSans-Light;
+  color: #333333;
+}
+/* line 101, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide p {
+  font-size: 1.8em;
+  color: #333333;
+  line-height: 1.5;
+  font-family: OpenSans-Light;
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 114, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide .novusDifference {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8%;
+}
+/* line 123, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide .novusPersonal {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 30px 0;
+}
+/* line 129, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide .novusPersonal .personalPhoto {
+  width: 185px;
+  height: 235px;
+  background: black no-repeat;
+  background-size: cover;
+}
+/* line 135, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide .novusPersonal .personalInfo {
+  width: calc(100% - 300px);
+}
+/* line 137, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide .novusPersonal .personalInfo span {
+  display: block;
+}
+/* line 139, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide .novusPersonal .personalInfo span:first-child {
+  font-size: 3.6em;
+  color: #239a75;
+  font-family: OpenSans-Bold;
+}
+/* line 144, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide .novusPersonal .personalInfo span:nth-child(2) {
+  font-size: 1.8em;
+  color: #444444;
+  font-family: OpenSans-Light;
+  margin-bottom: 30px;
+  position: relative;
+}
+/* line 150, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide .novusPersonal .personalInfo span:nth-child(2):after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  border: 1px solid #239a75;
+  top: 30px;
+  background: #239a75;
+}
+/* line 162, sass/pages/_aboutUs.scss */
+main .contentBox .aboutSide .novusPersonal .personalInfo p {
+  font-size: 1.5em;
+  color: #444444;
+}
+
+/* line 1, sass/partials/_inputsButtons.scss */
+.green-btn-phone {
+  background-color: #47187B;
+  border-radius: 25px;
+  padding: 10px 40px 10px 40px;
+  font: 300 3em "OpenSans-Regular";
+  color: #ffffff;
+  transition: all .3s;
+  position: relative;
+}
+/* line 9, sass/partials/_inputsButtons.scss */
+.green-btn-phone:hover {
+  transition: all .3s;
+  background-color: #ffffff;
+  color: #47187B;
+}
+
+/* line 15, sass/partials/_inputsButtons.scss */
+.sqr-btn {
+  background-color: #ffffff;
+  font: 300 2.0em 'OpenSans-Regular';
+  color: #aeb9b6;
+  padding: 15px 40px;
+  transition: all .3s;
+}
+/* line 21, sass/partials/_inputsButtons.scss */
+.sqr-btn span {
+  color: #239a75;
+  display: inline-block;
+  font: 300 1.0em 'OpenSans-Regular';
+  vertical-align: text-bottom;
+}
+/* line 27, sass/partials/_inputsButtons.scss */
+.sqr-btn:hover {
+  transition: all .3s;
+  background-color: #239a75;
+  color: #ffffff;
+}
+/* line 31, sass/partials/_inputsButtons.scss */
+.sqr-btn:hover span {
+  color: #ffffff;
+}
+
+/* line 36, sass/partials/_inputsButtons.scss */
+.green-btn {
+  font: 300 2.4em 'OpenSans-Regular';
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #0a5646;
+  padding: 15px 25px;
+  transition: all .3s;
+}
+/* line 43, sass/partials/_inputsButtons.scss */
+.green-btn:hover {
+  transition: all .3s;
+  background-color: #0a7665;
+}
+
+@media screen and (max-width: 1180px) {
+  /* line 3, sass/responsive/components/_header.scss */
+  header .green-btn-phone {
+    font-size: 1.8em;
+  }
+  /* line 5, sass/responsive/components/_header.scss */
+  header .green-btn-phone:after {
+    width: 30px;
+    height: 30px;
+    top: 18px;
+    background-size: cover;
+  }
+  /* line 12, sass/responsive/components/_header.scss */
+  header .center {
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 22, sass/responsive/components/_header.scss */
+  header {
+    position: relative;
+    padding: 0;
+    margin: 10px 0px;
+  }
+  /* line 26, sass/responsive/components/_header.scss */
+  header .center {
+    padding-bottom: 50px;
+    z-index: 2;
+    position: relative;
+    background: white;
+  }
+  /* line 31, sass/responsive/components/_header.scss */
+  header .center .logo {
+    margin: 0 auto;
+  }
+  /* line 34, sass/responsive/components/_header.scss */
+  header .center > nav {
+    display: none;
+  }
+  /* line 37, sass/responsive/components/_header.scss */
+  header .center .burgerWrap {
+    display: block;
+  }
+  /* line 40, sass/responsive/components/_header.scss */
+  header .center > .green-btn-phone {
+    display: none;
+  }
+  /* line 44, sass/responsive/components/_header.scss */
+  header .mobileNavLine {
+    width: 100%;
+    min-height: 20px;
+    background-color: #145645;
+    position: absolute;
+    bottom: -10px;
+    display: block;
+    z-index: 2;
+    border-bottom: 1px solid #a7b4a2;
+  }
+  /* line 53, sass/responsive/components/_header.scss */
+  header .mobileNavLine .naviItems {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+  }
+  /* line 58, sass/responsive/components/_header.scss */
+  header .mobileNavLine .naviItems .naviItem {
+    padding: 5px 0;
+  }
+  /* line 60, sass/responsive/components/_header.scss */
+  header .mobileNavLine .naviItems .naviItem:nth-of-type(2) a {
+    display: inline-block;
+    background: url(assets/images/pipl.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+  }
+  /* line 70, sass/responsive/components/_header.scss */
+  header .mobileNavLine .naviItems .naviItem i.fa {
+    font-size: 3.5em;
+    color: white;
+  }
+  /* line 77, sass/responsive/components/_header.scss */
+  header .mobileNavLine .burgerWrap {
+    display: block;
+  }
+  /* line 80, sass/responsive/components/_header.scss */
+  header .mobileNavLine .burgerWrap.menu-on .burger {
+    background: transparent;
+  }
+  /* line 84, sass/responsive/components/_header.scss */
+  header .mobileNavLine .burgerWrap .burger {
+    background: white;
+  }
+  /* line 86, sass/responsive/components/_header.scss */
+  header .mobileNavLine .burgerWrap .burger:after {
+    background: white;
+  }
+  /* line 89, sass/responsive/components/_header.scss */
+  header .mobileNavLine .burgerWrap .burger:before {
+    background: white;
+  }
+  /* line 94, sass/responsive/components/_header.scss */
+  header .mobileNavLine .navigationOverlay {
+    overflow: hidden;
+    max-height: 0;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s;
+    box-shadow: inset 19px -22px 42px -32px #ccc8cc;
+  }
+  /* line 103, sass/responsive/components/_header.scss */
+  header .mobileNavLine .navigationOverlay.moved {
+    transition: all 0.3s;
+    overflow: hidden;
+    max-height: 800px;
+  }
+  /* line 109, sass/responsive/components/_header.scss */
+  header .mobileNavLine .navigationOverlay ul li {
+    display: block;
+    border-bottom: 1px solid #a7b4a2;
+    background-color: white;
+  }
+  /* line 113, sass/responsive/components/_header.scss */
+  header .mobileNavLine .navigationOverlay ul li:hover {
+    transition: all 0.3s;
+  }
+  /* line 114, sass/responsive/components/_header.scss */
+  header .mobileNavLine .navigationOverlay ul li:hover a {
+    transition: all 0.3s;
+    padding-left: 25px;
+  }
+  /* line 120, sass/responsive/components/_header.scss */
+  header .mobileNavLine .navigationOverlay ul li a {
+    border-bottom: none;
+    padding: 15px 10px;
+    color: #444444;
+    transition: all 0.3s;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font: 600 1.8em Helvetica;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  /* line 134, sass/responsive/components/_header.scss */
+  header .mobileNavLine .navigationOverlay ul.green-link-nav li {
+    background-color: #1fa47a;
+  }
+  /* line 136, sass/responsive/components/_header.scss */
+  header .mobileNavLine .navigationOverlay ul.green-link-nav li a {
+    color: white;
+  }
+  /* line 144, sass/responsive/components/_header.scss */
+  header .btnWrap {
+    display: block;
+  }
+}
+@media screen and (max-width: 425px) {
+  /* line 153, sass/responsive/components/_header.scss */
+  header .center .logo {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* line 2, sass/responsive/components/_footer.scss */
+  footer {
+    padding: 10% 0 20% 0;
+  }
+  /* line 4, sass/responsive/components/_footer.scss */
+  footer .colWrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 8, sass/responsive/components/_footer.scss */
+  footer .colWrap .column {
+    flex-basis: 0;
+    text-align: center;
+  }
+  /* line 10, sass/responsive/components/_footer.scss */
+  footer .colWrap .column .logo {
+    margin: 0 auto;
+  }
+  /* line 12, sass/responsive/components/_footer.scss */
+  footer .colWrap .column .logo + p {
+    padding: 0;
+  }
+}
+/* line 4, sass/fonts/_core.scss */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 5, sass/fonts/_larger.scss */
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+/* line 10, sass/fonts/_larger.scss */
+.fa-2x {
+  font-size: 2em;
+}
+
+/* line 11, sass/fonts/_larger.scss */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* line 12, sass/fonts/_larger.scss */
+.fa-4x {
+  font-size: 4em;
+}
+
+/* line 13, sass/fonts/_larger.scss */
+.fa-5x {
+  font-size: 5em;
+}
+
+/* line 3, sass/fonts/_fixed-width.scss */
+.fa-fw {
+  width: 1.28571em;
+  text-align: center;
+}
+
+/* line 4, sass/fonts/_list.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none;
+}
+/* line 8, sass/fonts/_list.scss */
+.fa-ul > li {
+  position: relative;
+}
+
+/* line 10, sass/fonts/_list.scss */
+.fa-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center;
+}
+/* line 16, sass/fonts/_list.scss */
+.fa-li.fa-lg {
+  left: -1.85714em;
+}
+
+/* line 4, sass/fonts/_bordered-pulled.scss */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eee;
+  border-radius: .1em;
+}
+
+/* line 10, sass/fonts/_bordered-pulled.scss */
+.fa-pull-left {
+  float: left;
+}
+
+/* line 11, sass/fonts/_bordered-pulled.scss */
+.fa-pull-right {
+  float: right;
+}
+
+/* line 14, sass/fonts/_bordered-pulled.scss */
+.fa.fa-pull-left {
+  margin-right: .3em;
+}
+/* line 15, sass/fonts/_bordered-pulled.scss */
+.fa.fa-pull-right {
+  margin-left: .3em;
+}
+
+/* Deprecated as of 4.4.0 */
+/* line 19, sass/fonts/_bordered-pulled.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 20, sass/fonts/_bordered-pulled.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 23, sass/fonts/_bordered-pulled.scss */
+.fa.pull-left {
+  margin-right: .3em;
+}
+/* line 24, sass/fonts/_bordered-pulled.scss */
+.fa.pull-right {
+  margin-left: .3em;
+}
+
+/* line 4, sass/fonts/_animated.scss */
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+/* line 9, sass/fonts/_animated.scss */
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/* line 4, sass/fonts/_rotated-flipped.scss */
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 5, sass/fonts/_rotated-flipped.scss */
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 6, sass/fonts/_rotated-flipped.scss */
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 8, sass/fonts/_rotated-flipped.scss */
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 9, sass/fonts/_rotated-flipped.scss */
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 14, sass/fonts/_rotated-flipped.scss */
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none;
+}
+
+/* line 4, sass/fonts/_stacked.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+/* line 12, sass/fonts/_stacked.scss */
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 18, sass/fonts/_stacked.scss */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 19, sass/fonts/_stacked.scss */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 20, sass/fonts/_stacked.scss */
+.fa-inverse {
+  color: #fff;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 4, sass/fonts/_icons.scss */
+.fa-glass:before {
+  content: "";
+}
+
+/* line 5, sass/fonts/_icons.scss */
+.fa-music:before {
+  content: "";
+}
+
+/* line 6, sass/fonts/_icons.scss */
+.fa-search:before {
+  content: "";
+}
+
+/* line 7, sass/fonts/_icons.scss */
+.fa-envelope-o:before {
+  content: "";
+}
+
+/* line 8, sass/fonts/_icons.scss */
+.fa-heart:before {
+  content: "";
+}
+
+/* line 9, sass/fonts/_icons.scss */
+.fa-star:before {
+  content: "";
+}
+
+/* line 10, sass/fonts/_icons.scss */
+.fa-star-o:before {
+  content: "";
+}
+
+/* line 11, sass/fonts/_icons.scss */
+.fa-user:before {
+  content: "";
+}
+
+/* line 12, sass/fonts/_icons.scss */
+.fa-film:before {
+  content: "";
+}
+
+/* line 13, sass/fonts/_icons.scss */
+.fa-th-large:before {
+  content: "";
+}
+
+/* line 14, sass/fonts/_icons.scss */
+.fa-th:before {
+  content: "";
+}
+
+/* line 15, sass/fonts/_icons.scss */
+.fa-th-list:before {
+  content: "";
+}
+
+/* line 16, sass/fonts/_icons.scss */
+.fa-check:before {
+  content: "";
+}
+
+/* line 17, sass/fonts/_icons.scss */
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "";
+}
+
+/* line 20, sass/fonts/_icons.scss */
+.fa-search-plus:before {
+  content: "";
+}
+
+/* line 21, sass/fonts/_icons.scss */
+.fa-search-minus:before {
+  content: "";
+}
+
+/* line 22, sass/fonts/_icons.scss */
+.fa-power-off:before {
+  content: "";
+}
+
+/* line 23, sass/fonts/_icons.scss */
+.fa-signal:before {
+  content: "";
+}
+
+/* line 24, sass/fonts/_icons.scss */
+.fa-gear:before,
+.fa-cog:before {
+  content: "";
+}
+
+/* line 26, sass/fonts/_icons.scss */
+.fa-trash-o:before {
+  content: "";
+}
+
+/* line 27, sass/fonts/_icons.scss */
+.fa-home:before {
+  content: "";
+}
+
+/* line 28, sass/fonts/_icons.scss */
+.fa-file-o:before {
+  content: "";
+}
+
+/* line 29, sass/fonts/_icons.scss */
+.fa-clock-o:before {
+  content: "";
+}
+
+/* line 30, sass/fonts/_icons.scss */
+.fa-road:before {
+  content: "";
+}
+
+/* line 31, sass/fonts/_icons.scss */
+.fa-download:before {
+  content: "";
+}
+
+/* line 32, sass/fonts/_icons.scss */
+.fa-arrow-circle-o-down:before {
+  content: "";
+}
+
+/* line 33, sass/fonts/_icons.scss */
+.fa-arrow-circle-o-up:before {
+  content: "";
+}
+
+/* line 34, sass/fonts/_icons.scss */
+.fa-inbox:before {
+  content: "";
+}
+
+/* line 35, sass/fonts/_icons.scss */
+.fa-play-circle-o:before {
+  content: "";
+}
+
+/* line 36, sass/fonts/_icons.scss */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "";
+}
+
+/* line 38, sass/fonts/_icons.scss */
+.fa-refresh:before {
+  content: "";
+}
+
+/* line 39, sass/fonts/_icons.scss */
+.fa-list-alt:before {
+  content: "";
+}
+
+/* line 40, sass/fonts/_icons.scss */
+.fa-lock:before {
+  content: "";
+}
+
+/* line 41, sass/fonts/_icons.scss */
+.fa-flag:before {
+  content: "";
+}
+
+/* line 42, sass/fonts/_icons.scss */
+.fa-headphones:before {
+  content: "";
+}
+
+/* line 43, sass/fonts/_icons.scss */
+.fa-volume-off:before {
+  content: "";
+}
+
+/* line 44, sass/fonts/_icons.scss */
+.fa-volume-down:before {
+  content: "";
+}
+
+/* line 45, sass/fonts/_icons.scss */
+.fa-volume-up:before {
+  content: "";
+}
+
+/* line 46, sass/fonts/_icons.scss */
+.fa-qrcode:before {
+  content: "";
+}
+
+/* line 47, sass/fonts/_icons.scss */
+.fa-barcode:before {
+  content: "";
+}
+
+/* line 48, sass/fonts/_icons.scss */
+.fa-tag:before {
+  content: "";
+}
+
+/* line 49, sass/fonts/_icons.scss */
+.fa-tags:before {
+  content: "";
+}
+
+/* line 50, sass/fonts/_icons.scss */
+.fa-book:before {
+  content: "";
+}
+
+/* line 51, sass/fonts/_icons.scss */
+.fa-bookmark:before {
+  content: "";
+}
+
+/* line 52, sass/fonts/_icons.scss */
+.fa-print:before {
+  content: "";
+}
+
+/* line 53, sass/fonts/_icons.scss */
+.fa-camera:before {
+  content: "";
+}
+
+/* line 54, sass/fonts/_icons.scss */
+.fa-font:before {
+  content: "";
+}
+
+/* line 55, sass/fonts/_icons.scss */
+.fa-bold:before {
+  content: "";
+}
+
+/* line 56, sass/fonts/_icons.scss */
+.fa-italic:before {
+  content: "";
+}
+
+/* line 57, sass/fonts/_icons.scss */
+.fa-text-height:before {
+  content: "";
+}
+
+/* line 58, sass/fonts/_icons.scss */
+.fa-text-width:before {
+  content: "";
+}
+
+/* line 59, sass/fonts/_icons.scss */
+.fa-align-left:before {
+  content: "";
+}
+
+/* line 60, sass/fonts/_icons.scss */
+.fa-align-center:before {
+  content: "";
+}
+
+/* line 61, sass/fonts/_icons.scss */
+.fa-align-right:before {
+  content: "";
+}
+
+/* line 62, sass/fonts/_icons.scss */
+.fa-align-justify:before {
+  content: "";
+}
+
+/* line 63, sass/fonts/_icons.scss */
+.fa-list:before {
+  content: "";
+}
+
+/* line 64, sass/fonts/_icons.scss */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "";
+}
+
+/* line 66, sass/fonts/_icons.scss */
+.fa-indent:before {
+  content: "";
+}
+
+/* line 67, sass/fonts/_icons.scss */
+.fa-video-camera:before {
+  content: "";
+}
+
+/* line 68, sass/fonts/_icons.scss */
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "";
+}
+
+/* line 71, sass/fonts/_icons.scss */
+.fa-pencil:before {
+  content: "";
+}
+
+/* line 72, sass/fonts/_icons.scss */
+.fa-map-marker:before {
+  content: "";
+}
+
+/* line 73, sass/fonts/_icons.scss */
+.fa-adjust:before {
+  content: "";
+}
+
+/* line 74, sass/fonts/_icons.scss */
+.fa-tint:before {
+  content: "";
+}
+
+/* line 75, sass/fonts/_icons.scss */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "";
+}
+
+/* line 77, sass/fonts/_icons.scss */
+.fa-share-square-o:before {
+  content: "";
+}
+
+/* line 78, sass/fonts/_icons.scss */
+.fa-check-square-o:before {
+  content: "";
+}
+
+/* line 79, sass/fonts/_icons.scss */
+.fa-arrows:before {
+  content: "";
+}
+
+/* line 80, sass/fonts/_icons.scss */
+.fa-step-backward:before {
+  content: "";
+}
+
+/* line 81, sass/fonts/_icons.scss */
+.fa-fast-backward:before {
+  content: "";
+}
+
+/* line 82, sass/fonts/_icons.scss */
+.fa-backward:before {
+  content: "";
+}
+
+/* line 83, sass/fonts/_icons.scss */
+.fa-play:before {
+  content: "";
+}
+
+/* line 84, sass/fonts/_icons.scss */
+.fa-pause:before {
+  content: "";
+}
+
+/* line 85, sass/fonts/_icons.scss */
+.fa-stop:before {
+  content: "";
+}
+
+/* line 86, sass/fonts/_icons.scss */
+.fa-forward:before {
+  content: "";
+}
+
+/* line 87, sass/fonts/_icons.scss */
+.fa-fast-forward:before {
+  content: "";
+}
+
+/* line 88, sass/fonts/_icons.scss */
+.fa-step-forward:before {
+  content: "";
+}
+
+/* line 89, sass/fonts/_icons.scss */
+.fa-eject:before {
+  content: "";
+}
+
+/* line 90, sass/fonts/_icons.scss */
+.fa-chevron-left:before {
+  content: "";
+}
+
+/* line 91, sass/fonts/_icons.scss */
+.fa-chevron-right:before {
+  content: "";
+}
+
+/* line 92, sass/fonts/_icons.scss */
+.fa-plus-circle:before {
+  content: "";
+}
+
+/* line 93, sass/fonts/_icons.scss */
+.fa-minus-circle:before {
+  content: "";
+}
+
+/* line 94, sass/fonts/_icons.scss */
+.fa-times-circle:before {
+  content: "";
+}
+
+/* line 95, sass/fonts/_icons.scss */
+.fa-check-circle:before {
+  content: "";
+}
+
+/* line 96, sass/fonts/_icons.scss */
+.fa-question-circle:before {
+  content: "";
+}
+
+/* line 97, sass/fonts/_icons.scss */
+.fa-info-circle:before {
+  content: "";
+}
+
+/* line 98, sass/fonts/_icons.scss */
+.fa-crosshairs:before {
+  content: "";
+}
+
+/* line 99, sass/fonts/_icons.scss */
+.fa-times-circle-o:before {
+  content: "";
+}
+
+/* line 100, sass/fonts/_icons.scss */
+.fa-check-circle-o:before {
+  content: "";
+}
+
+/* line 101, sass/fonts/_icons.scss */
+.fa-ban:before {
+  content: "";
+}
+
+/* line 102, sass/fonts/_icons.scss */
+.fa-arrow-left:before {
+  content: "";
+}
+
+/* line 103, sass/fonts/_icons.scss */
+.fa-arrow-right:before {
+  content: "";
+}
+
+/* line 104, sass/fonts/_icons.scss */
+.fa-arrow-up:before {
+  content: "";
+}
+
+/* line 105, sass/fonts/_icons.scss */
+.fa-arrow-down:before {
+  content: "";
+}
+
+/* line 106, sass/fonts/_icons.scss */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "";
+}
+
+/* line 108, sass/fonts/_icons.scss */
+.fa-expand:before {
+  content: "";
+}
+
+/* line 109, sass/fonts/_icons.scss */
+.fa-compress:before {
+  content: "";
+}
+
+/* line 110, sass/fonts/_icons.scss */
+.fa-plus:before {
+  content: "";
+}
+
+/* line 111, sass/fonts/_icons.scss */
+.fa-minus:before {
+  content: "";
+}
+
+/* line 112, sass/fonts/_icons.scss */
+.fa-asterisk:before {
+  content: "";
+}
+
+/* line 113, sass/fonts/_icons.scss */
+.fa-exclamation-circle:before {
+  content: "";
+}
+
+/* line 114, sass/fonts/_icons.scss */
+.fa-gift:before {
+  content: "";
+}
+
+/* line 115, sass/fonts/_icons.scss */
+.fa-leaf:before {
+  content: "";
+}
+
+/* line 116, sass/fonts/_icons.scss */
+.fa-fire:before {
+  content: "";
+}
+
+/* line 117, sass/fonts/_icons.scss */
+.fa-eye:before {
+  content: "";
+}
+
+/* line 118, sass/fonts/_icons.scss */
+.fa-eye-slash:before {
+  content: "";
+}
+
+/* line 119, sass/fonts/_icons.scss */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "";
+}
+
+/* line 121, sass/fonts/_icons.scss */
+.fa-plane:before {
+  content: "";
+}
+
+/* line 122, sass/fonts/_icons.scss */
+.fa-calendar:before {
+  content: "";
+}
+
+/* line 123, sass/fonts/_icons.scss */
+.fa-random:before {
+  content: "";
+}
+
+/* line 124, sass/fonts/_icons.scss */
+.fa-comment:before {
+  content: "";
+}
+
+/* line 125, sass/fonts/_icons.scss */
+.fa-magnet:before {
+  content: "";
+}
+
+/* line 126, sass/fonts/_icons.scss */
+.fa-chevron-up:before {
+  content: "";
+}
+
+/* line 127, sass/fonts/_icons.scss */
+.fa-chevron-down:before {
+  content: "";
+}
+
+/* line 128, sass/fonts/_icons.scss */
+.fa-retweet:before {
+  content: "";
+}
+
+/* line 129, sass/fonts/_icons.scss */
+.fa-shopping-cart:before {
+  content: "";
+}
+
+/* line 130, sass/fonts/_icons.scss */
+.fa-folder:before {
+  content: "";
+}
+
+/* line 131, sass/fonts/_icons.scss */
+.fa-folder-open:before {
+  content: "";
+}
+
+/* line 132, sass/fonts/_icons.scss */
+.fa-arrows-v:before {
+  content: "";
+}
+
+/* line 133, sass/fonts/_icons.scss */
+.fa-arrows-h:before {
+  content: "";
+}
+
+/* line 134, sass/fonts/_icons.scss */
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: "";
+}
+
+/* line 136, sass/fonts/_icons.scss */
+.fa-twitter-square:before {
+  content: "";
+}
+
+/* line 137, sass/fonts/_icons.scss */
+.fa-facebook-square:before {
+  content: "";
+}
+
+/* line 138, sass/fonts/_icons.scss */
+.fa-camera-retro:before {
+  content: "";
+}
+
+/* line 139, sass/fonts/_icons.scss */
+.fa-key:before {
+  content: "";
+}
+
+/* line 140, sass/fonts/_icons.scss */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "";
+}
+
+/* line 142, sass/fonts/_icons.scss */
+.fa-comments:before {
+  content: "";
+}
+
+/* line 143, sass/fonts/_icons.scss */
+.fa-thumbs-o-up:before {
+  content: "";
+}
+
+/* line 144, sass/fonts/_icons.scss */
+.fa-thumbs-o-down:before {
+  content: "";
+}
+
+/* line 145, sass/fonts/_icons.scss */
+.fa-star-half:before {
+  content: "";
+}
+
+/* line 146, sass/fonts/_icons.scss */
+.fa-heart-o:before {
+  content: "";
+}
+
+/* line 147, sass/fonts/_icons.scss */
+.fa-sign-out:before {
+  content: "";
+}
+
+/* line 148, sass/fonts/_icons.scss */
+.fa-linkedin-square:before {
+  content: "";
+}
+
+/* line 149, sass/fonts/_icons.scss */
+.fa-thumb-tack:before {
+  content: "";
+}
+
+/* line 150, sass/fonts/_icons.scss */
+.fa-external-link:before {
+  content: "";
+}
+
+/* line 151, sass/fonts/_icons.scss */
+.fa-sign-in:before {
+  content: "";
+}
+
+/* line 152, sass/fonts/_icons.scss */
+.fa-trophy:before {
+  content: "";
+}
+
+/* line 153, sass/fonts/_icons.scss */
+.fa-github-square:before {
+  content: "";
+}
+
+/* line 154, sass/fonts/_icons.scss */
+.fa-upload:before {
+  content: "";
+}
+
+/* line 155, sass/fonts/_icons.scss */
+.fa-lemon-o:before {
+  content: "";
+}
+
+/* line 156, sass/fonts/_icons.scss */
+.fa-phone:before {
+  content: "";
+}
+
+/* line 157, sass/fonts/_icons.scss */
+.fa-square-o:before {
+  content: "";
+}
+
+/* line 158, sass/fonts/_icons.scss */
+.fa-bookmark-o:before {
+  content: "";
+}
+
+/* line 159, sass/fonts/_icons.scss */
+.fa-phone-square:before {
+  content: "";
+}
+
+/* line 160, sass/fonts/_icons.scss */
+.fa-twitter:before {
+  content: "";
+}
+
+/* line 161, sass/fonts/_icons.scss */
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "";
+}
+
+/* line 163, sass/fonts/_icons.scss */
+.fa-github:before {
+  content: "";
+}
+
+/* line 164, sass/fonts/_icons.scss */
+.fa-unlock:before {
+  content: "";
+}
+
+/* line 165, sass/fonts/_icons.scss */
+.fa-credit-card:before {
+  content: "";
+}
+
+/* line 166, sass/fonts/_icons.scss */
+.fa-feed:before,
+.fa-rss:before {
+  content: "";
+}
+
+/* line 168, sass/fonts/_icons.scss */
+.fa-hdd-o:before {
+  content: "";
+}
+
+/* line 169, sass/fonts/_icons.scss */
+.fa-bullhorn:before {
+  content: "";
+}
+
+/* line 170, sass/fonts/_icons.scss */
+.fa-bell:before {
+  content: "";
+}
+
+/* line 171, sass/fonts/_icons.scss */
+.fa-certificate:before {
+  content: "";
+}
+
+/* line 172, sass/fonts/_icons.scss */
+.fa-hand-o-right:before {
+  content: "";
+}
+
+/* line 173, sass/fonts/_icons.scss */
+.fa-hand-o-left:before {
+  content: "";
+}
+
+/* line 174, sass/fonts/_icons.scss */
+.fa-hand-o-up:before {
+  content: "";
+}
+
+/* line 175, sass/fonts/_icons.scss */
+.fa-hand-o-down:before {
+  content: "";
+}
+
+/* line 176, sass/fonts/_icons.scss */
+.fa-arrow-circle-left:before {
+  content: "";
+}
+
+/* line 177, sass/fonts/_icons.scss */
+.fa-arrow-circle-right:before {
+  content: "";
+}
+
+/* line 178, sass/fonts/_icons.scss */
+.fa-arrow-circle-up:before {
+  content: "";
+}
+
+/* line 179, sass/fonts/_icons.scss */
+.fa-arrow-circle-down:before {
+  content: "";
+}
+
+/* line 180, sass/fonts/_icons.scss */
+.fa-globe:before {
+  content: "";
+}
+
+/* line 181, sass/fonts/_icons.scss */
+.fa-wrench:before {
+  content: "";
+}
+
+/* line 182, sass/fonts/_icons.scss */
+.fa-tasks:before {
+  content: "";
+}
+
+/* line 183, sass/fonts/_icons.scss */
+.fa-filter:before {
+  content: "";
+}
+
+/* line 184, sass/fonts/_icons.scss */
+.fa-briefcase:before {
+  content: "";
+}
+
+/* line 185, sass/fonts/_icons.scss */
+.fa-arrows-alt:before {
+  content: "";
+}
+
+/* line 186, sass/fonts/_icons.scss */
+.fa-group:before,
+.fa-users:before {
+  content: "";
+}
+
+/* line 188, sass/fonts/_icons.scss */
+.fa-chain:before,
+.fa-link:before {
+  content: "";
+}
+
+/* line 190, sass/fonts/_icons.scss */
+.fa-cloud:before {
+  content: "";
+}
+
+/* line 191, sass/fonts/_icons.scss */
+.fa-flask:before {
+  content: "";
+}
+
+/* line 192, sass/fonts/_icons.scss */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "";
+}
+
+/* line 194, sass/fonts/_icons.scss */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "";
+}
+
+/* line 196, sass/fonts/_icons.scss */
+.fa-paperclip:before {
+  content: "";
+}
+
+/* line 197, sass/fonts/_icons.scss */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "";
+}
+
+/* line 199, sass/fonts/_icons.scss */
+.fa-square:before {
+  content: "";
+}
+
+/* line 200, sass/fonts/_icons.scss */
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "";
+}
+
+/* line 203, sass/fonts/_icons.scss */
+.fa-list-ul:before {
+  content: "";
+}
+
+/* line 204, sass/fonts/_icons.scss */
+.fa-list-ol:before {
+  content: "";
+}
+
+/* line 205, sass/fonts/_icons.scss */
+.fa-strikethrough:before {
+  content: "";
+}
+
+/* line 206, sass/fonts/_icons.scss */
+.fa-underline:before {
+  content: "";
+}
+
+/* line 207, sass/fonts/_icons.scss */
+.fa-table:before {
+  content: "";
+}
+
+/* line 208, sass/fonts/_icons.scss */
+.fa-magic:before {
+  content: "";
+}
+
+/* line 209, sass/fonts/_icons.scss */
+.fa-truck:before {
+  content: "";
+}
+
+/* line 210, sass/fonts/_icons.scss */
+.fa-pinterest:before {
+  content: "";
+}
+
+/* line 211, sass/fonts/_icons.scss */
+.fa-pinterest-square:before {
+  content: "";
+}
+
+/* line 212, sass/fonts/_icons.scss */
+.fa-google-plus-square:before {
+  content: "";
+}
+
+/* line 213, sass/fonts/_icons.scss */
+.fa-google-plus:before {
+  content: "";
+}
+
+/* line 214, sass/fonts/_icons.scss */
+.fa-money:before {
+  content: "";
+}
+
+/* line 215, sass/fonts/_icons.scss */
+.fa-caret-down:before {
+  content: "";
+}
+
+/* line 216, sass/fonts/_icons.scss */
+.fa-caret-up:before {
+  content: "";
+}
+
+/* line 217, sass/fonts/_icons.scss */
+.fa-caret-left:before {
+  content: "";
+}
+
+/* line 218, sass/fonts/_icons.scss */
+.fa-caret-right:before {
+  content: "";
+}
+
+/* line 219, sass/fonts/_icons.scss */
+.fa-columns:before {
+  content: "";
+}
+
+/* line 220, sass/fonts/_icons.scss */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "";
+}
+
+/* line 222, sass/fonts/_icons.scss */
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "";
+}
+
+/* line 224, sass/fonts/_icons.scss */
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "";
+}
+
+/* line 226, sass/fonts/_icons.scss */
+.fa-envelope:before {
+  content: "";
+}
+
+/* line 227, sass/fonts/_icons.scss */
+.fa-linkedin:before {
+  content: "";
+}
+
+/* line 228, sass/fonts/_icons.scss */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "";
+}
+
+/* line 230, sass/fonts/_icons.scss */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "";
+}
+
+/* line 232, sass/fonts/_icons.scss */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "";
+}
+
+/* line 234, sass/fonts/_icons.scss */
+.fa-comment-o:before {
+  content: "";
+}
+
+/* line 235, sass/fonts/_icons.scss */
+.fa-comments-o:before {
+  content: "";
+}
+
+/* line 236, sass/fonts/_icons.scss */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "";
+}
+
+/* line 238, sass/fonts/_icons.scss */
+.fa-sitemap:before {
+  content: "";
+}
+
+/* line 239, sass/fonts/_icons.scss */
+.fa-umbrella:before {
+  content: "";
+}
+
+/* line 240, sass/fonts/_icons.scss */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "";
+}
+
+/* line 242, sass/fonts/_icons.scss */
+.fa-lightbulb-o:before {
+  content: "";
+}
+
+/* line 243, sass/fonts/_icons.scss */
+.fa-exchange:before {
+  content: "";
+}
+
+/* line 244, sass/fonts/_icons.scss */
+.fa-cloud-download:before {
+  content: "";
+}
+
+/* line 245, sass/fonts/_icons.scss */
+.fa-cloud-upload:before {
+  content: "";
+}
+
+/* line 246, sass/fonts/_icons.scss */
+.fa-user-md:before {
+  content: "";
+}
+
+/* line 247, sass/fonts/_icons.scss */
+.fa-stethoscope:before {
+  content: "";
+}
+
+/* line 248, sass/fonts/_icons.scss */
+.fa-suitcase:before {
+  content: "";
+}
+
+/* line 249, sass/fonts/_icons.scss */
+.fa-bell-o:before {
+  content: "";
+}
+
+/* line 250, sass/fonts/_icons.scss */
+.fa-coffee:before {
+  content: "";
+}
+
+/* line 251, sass/fonts/_icons.scss */
+.fa-cutlery:before {
+  content: "";
+}
+
+/* line 252, sass/fonts/_icons.scss */
+.fa-file-text-o:before {
+  content: "";
+}
+
+/* line 253, sass/fonts/_icons.scss */
+.fa-building-o:before {
+  content: "";
+}
+
+/* line 254, sass/fonts/_icons.scss */
+.fa-hospital-o:before {
+  content: "";
+}
+
+/* line 255, sass/fonts/_icons.scss */
+.fa-ambulance:before {
+  content: "";
+}
+
+/* line 256, sass/fonts/_icons.scss */
+.fa-medkit:before {
+  content: "";
+}
+
+/* line 257, sass/fonts/_icons.scss */
+.fa-fighter-jet:before {
+  content: "";
+}
+
+/* line 258, sass/fonts/_icons.scss */
+.fa-beer:before {
+  content: "";
+}
+
+/* line 259, sass/fonts/_icons.scss */
+.fa-h-square:before {
+  content: "";
+}
+
+/* line 260, sass/fonts/_icons.scss */
+.fa-plus-square:before {
+  content: "";
+}
+
+/* line 261, sass/fonts/_icons.scss */
+.fa-angle-double-left:before {
+  content: "";
+}
+
+/* line 262, sass/fonts/_icons.scss */
+.fa-angle-double-right:before {
+  content: "";
+}
+
+/* line 263, sass/fonts/_icons.scss */
+.fa-angle-double-up:before {
+  content: "";
+}
+
+/* line 264, sass/fonts/_icons.scss */
+.fa-angle-double-down:before {
+  content: "";
+}
+
+/* line 265, sass/fonts/_icons.scss */
+.fa-angle-left:before {
+  content: "";
+}
+
+/* line 266, sass/fonts/_icons.scss */
+.fa-angle-right:before {
+  content: "";
+}
+
+/* line 267, sass/fonts/_icons.scss */
+.fa-angle-up:before {
+  content: "";
+}
+
+/* line 268, sass/fonts/_icons.scss */
+.fa-angle-down:before {
+  content: "";
+}
+
+/* line 269, sass/fonts/_icons.scss */
+.fa-desktop:before {
+  content: "";
+}
+
+/* line 270, sass/fonts/_icons.scss */
+.fa-laptop:before {
+  content: "";
+}
+
+/* line 271, sass/fonts/_icons.scss */
+.fa-tablet:before {
+  content: "";
+}
+
+/* line 272, sass/fonts/_icons.scss */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "";
+}
+
+/* line 274, sass/fonts/_icons.scss */
+.fa-circle-o:before {
+  content: "";
+}
+
+/* line 275, sass/fonts/_icons.scss */
+.fa-quote-left:before {
+  content: "";
+}
+
+/* line 276, sass/fonts/_icons.scss */
+.fa-quote-right:before {
+  content: "";
+}
+
+/* line 277, sass/fonts/_icons.scss */
+.fa-spinner:before {
+  content: "";
+}
+
+/* line 278, sass/fonts/_icons.scss */
+.fa-circle:before {
+  content: "";
+}
+
+/* line 279, sass/fonts/_icons.scss */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "";
+}
+
+/* line 281, sass/fonts/_icons.scss */
+.fa-github-alt:before {
+  content: "";
+}
+
+/* line 282, sass/fonts/_icons.scss */
+.fa-folder-o:before {
+  content: "";
+}
+
+/* line 283, sass/fonts/_icons.scss */
+.fa-folder-open-o:before {
+  content: "";
+}
+
+/* line 284, sass/fonts/_icons.scss */
+.fa-smile-o:before {
+  content: "";
+}
+
+/* line 285, sass/fonts/_icons.scss */
+.fa-frown-o:before {
+  content: "";
+}
+
+/* line 286, sass/fonts/_icons.scss */
+.fa-meh-o:before {
+  content: "";
+}
+
+/* line 287, sass/fonts/_icons.scss */
+.fa-gamepad:before {
+  content: "";
+}
+
+/* line 288, sass/fonts/_icons.scss */
+.fa-keyboard-o:before {
+  content: "";
+}
+
+/* line 289, sass/fonts/_icons.scss */
+.fa-flag-o:before {
+  content: "";
+}
+
+/* line 290, sass/fonts/_icons.scss */
+.fa-flag-checkered:before {
+  content: "";
+}
+
+/* line 291, sass/fonts/_icons.scss */
+.fa-terminal:before {
+  content: "";
+}
+
+/* line 292, sass/fonts/_icons.scss */
+.fa-code:before {
+  content: "";
+}
+
+/* line 293, sass/fonts/_icons.scss */
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "";
+}
+
+/* line 295, sass/fonts/_icons.scss */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "";
+}
+
+/* line 298, sass/fonts/_icons.scss */
+.fa-location-arrow:before {
+  content: "";
+}
+
+/* line 299, sass/fonts/_icons.scss */
+.fa-crop:before {
+  content: "";
+}
+
+/* line 300, sass/fonts/_icons.scss */
+.fa-code-fork:before {
+  content: "";
+}
+
+/* line 301, sass/fonts/_icons.scss */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "";
+}
+
+/* line 303, sass/fonts/_icons.scss */
+.fa-question:before {
+  content: "";
+}
+
+/* line 304, sass/fonts/_icons.scss */
+.fa-info:before {
+  content: "";
+}
+
+/* line 305, sass/fonts/_icons.scss */
+.fa-exclamation:before {
+  content: "";
+}
+
+/* line 306, sass/fonts/_icons.scss */
+.fa-superscript:before {
+  content: "";
+}
+
+/* line 307, sass/fonts/_icons.scss */
+.fa-subscript:before {
+  content: "";
+}
+
+/* line 308, sass/fonts/_icons.scss */
+.fa-eraser:before {
+  content: "";
+}
+
+/* line 309, sass/fonts/_icons.scss */
+.fa-puzzle-piece:before {
+  content: "";
+}
+
+/* line 310, sass/fonts/_icons.scss */
+.fa-microphone:before {
+  content: "";
+}
+
+/* line 311, sass/fonts/_icons.scss */
+.fa-microphone-slash:before {
+  content: "";
+}
+
+/* line 312, sass/fonts/_icons.scss */
+.fa-shield:before {
+  content: "";
+}
+
+/* line 313, sass/fonts/_icons.scss */
+.fa-calendar-o:before {
+  content: "";
+}
+
+/* line 314, sass/fonts/_icons.scss */
+.fa-fire-extinguisher:before {
+  content: "";
+}
+
+/* line 315, sass/fonts/_icons.scss */
+.fa-rocket:before {
+  content: "";
+}
+
+/* line 316, sass/fonts/_icons.scss */
+.fa-maxcdn:before {
+  content: "";
+}
+
+/* line 317, sass/fonts/_icons.scss */
+.fa-chevron-circle-left:before {
+  content: "";
+}
+
+/* line 318, sass/fonts/_icons.scss */
+.fa-chevron-circle-right:before {
+  content: "";
+}
+
+/* line 319, sass/fonts/_icons.scss */
+.fa-chevron-circle-up:before {
+  content: "";
+}
+
+/* line 320, sass/fonts/_icons.scss */
+.fa-chevron-circle-down:before {
+  content: "";
+}
+
+/* line 321, sass/fonts/_icons.scss */
+.fa-html5:before {
+  content: "";
+}
+
+/* line 322, sass/fonts/_icons.scss */
+.fa-css3:before {
+  content: "";
+}
+
+/* line 323, sass/fonts/_icons.scss */
+.fa-anchor:before {
+  content: "";
+}
+
+/* line 324, sass/fonts/_icons.scss */
+.fa-unlock-alt:before {
+  content: "";
+}
+
+/* line 325, sass/fonts/_icons.scss */
+.fa-bullseye:before {
+  content: "";
+}
+
+/* line 326, sass/fonts/_icons.scss */
+.fa-ellipsis-h:before {
+  content: "";
+}
+
+/* line 327, sass/fonts/_icons.scss */
+.fa-ellipsis-v:before {
+  content: "";
+}
+
+/* line 328, sass/fonts/_icons.scss */
+.fa-rss-square:before {
+  content: "";
+}
+
+/* line 329, sass/fonts/_icons.scss */
+.fa-play-circle:before {
+  content: "";
+}
+
+/* line 330, sass/fonts/_icons.scss */
+.fa-ticket:before {
+  content: "";
+}
+
+/* line 331, sass/fonts/_icons.scss */
+.fa-minus-square:before {
+  content: "";
+}
+
+/* line 332, sass/fonts/_icons.scss */
+.fa-minus-square-o:before {
+  content: "";
+}
+
+/* line 333, sass/fonts/_icons.scss */
+.fa-level-up:before {
+  content: "";
+}
+
+/* line 334, sass/fonts/_icons.scss */
+.fa-level-down:before {
+  content: "";
+}
+
+/* line 335, sass/fonts/_icons.scss */
+.fa-check-square:before {
+  content: "";
+}
+
+/* line 336, sass/fonts/_icons.scss */
+.fa-pencil-square:before {
+  content: "";
+}
+
+/* line 337, sass/fonts/_icons.scss */
+.fa-external-link-square:before {
+  content: "";
+}
+
+/* line 338, sass/fonts/_icons.scss */
+.fa-share-square:before {
+  content: "";
+}
+
+/* line 339, sass/fonts/_icons.scss */
+.fa-compass:before {
+  content: "";
+}
+
+/* line 340, sass/fonts/_icons.scss */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "";
+}
+
+/* line 342, sass/fonts/_icons.scss */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "";
+}
+
+/* line 344, sass/fonts/_icons.scss */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "";
+}
+
+/* line 346, sass/fonts/_icons.scss */
+.fa-euro:before,
+.fa-eur:before {
+  content: "";
+}
+
+/* line 348, sass/fonts/_icons.scss */
+.fa-gbp:before {
+  content: "";
+}
+
+/* line 349, sass/fonts/_icons.scss */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "";
+}
+
+/* line 351, sass/fonts/_icons.scss */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "";
+}
+
+/* line 353, sass/fonts/_icons.scss */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "";
+}
+
+/* line 357, sass/fonts/_icons.scss */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "";
+}
+
+/* line 360, sass/fonts/_icons.scss */
+.fa-won:before,
+.fa-krw:before {
+  content: "";
+}
+
+/* line 362, sass/fonts/_icons.scss */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "";
+}
+
+/* line 364, sass/fonts/_icons.scss */
+.fa-file:before {
+  content: "";
+}
+
+/* line 365, sass/fonts/_icons.scss */
+.fa-file-text:before {
+  content: "";
+}
+
+/* line 366, sass/fonts/_icons.scss */
+.fa-sort-alpha-asc:before {
+  content: "";
+}
+
+/* line 367, sass/fonts/_icons.scss */
+.fa-sort-alpha-desc:before {
+  content: "";
+}
+
+/* line 368, sass/fonts/_icons.scss */
+.fa-sort-amount-asc:before {
+  content: "";
+}
+
+/* line 369, sass/fonts/_icons.scss */
+.fa-sort-amount-desc:before {
+  content: "";
+}
+
+/* line 370, sass/fonts/_icons.scss */
+.fa-sort-numeric-asc:before {
+  content: "";
+}
+
+/* line 371, sass/fonts/_icons.scss */
+.fa-sort-numeric-desc:before {
+  content: "";
+}
+
+/* line 372, sass/fonts/_icons.scss */
+.fa-thumbs-up:before {
+  content: "";
+}
+
+/* line 373, sass/fonts/_icons.scss */
+.fa-thumbs-down:before {
+  content: "";
+}
+
+/* line 374, sass/fonts/_icons.scss */
+.fa-youtube-square:before {
+  content: "";
+}
+
+/* line 375, sass/fonts/_icons.scss */
+.fa-youtube:before {
+  content: "";
+}
+
+/* line 376, sass/fonts/_icons.scss */
+.fa-xing:before {
+  content: "";
+}
+
+/* line 377, sass/fonts/_icons.scss */
+.fa-xing-square:before {
+  content: "";
+}
+
+/* line 378, sass/fonts/_icons.scss */
+.fa-youtube-play:before {
+  content: "";
+}
+
+/* line 379, sass/fonts/_icons.scss */
+.fa-dropbox:before {
+  content: "";
+}
+
+/* line 380, sass/fonts/_icons.scss */
+.fa-stack-overflow:before {
+  content: "";
+}
+
+/* line 381, sass/fonts/_icons.scss */
+.fa-instagram:before {
+  content: "";
+}
+
+/* line 382, sass/fonts/_icons.scss */
+.fa-flickr:before {
+  content: "";
+}
+
+/* line 383, sass/fonts/_icons.scss */
+.fa-adn:before {
+  content: "";
+}
+
+/* line 384, sass/fonts/_icons.scss */
+.fa-bitbucket:before {
+  content: "";
+}
+
+/* line 385, sass/fonts/_icons.scss */
+.fa-bitbucket-square:before {
+  content: "";
+}
+
+/* line 386, sass/fonts/_icons.scss */
+.fa-tumblr:before {
+  content: "";
+}
+
+/* line 387, sass/fonts/_icons.scss */
+.fa-tumblr-square:before {
+  content: "";
+}
+
+/* line 388, sass/fonts/_icons.scss */
+.fa-long-arrow-down:before {
+  content: "";
+}
+
+/* line 389, sass/fonts/_icons.scss */
+.fa-long-arrow-up:before {
+  content: "";
+}
+
+/* line 390, sass/fonts/_icons.scss */
+.fa-long-arrow-left:before {
+  content: "";
+}
+
+/* line 391, sass/fonts/_icons.scss */
+.fa-long-arrow-right:before {
+  content: "";
+}
+
+/* line 392, sass/fonts/_icons.scss */
+.fa-apple:before {
+  content: "";
+}
+
+/* line 393, sass/fonts/_icons.scss */
+.fa-windows:before {
+  content: "";
+}
+
+/* line 394, sass/fonts/_icons.scss */
+.fa-android:before {
+  content: "";
+}
+
+/* line 395, sass/fonts/_icons.scss */
+.fa-linux:before {
+  content: "";
+}
+
+/* line 396, sass/fonts/_icons.scss */
+.fa-dribbble:before {
+  content: "";
+}
+
+/* line 397, sass/fonts/_icons.scss */
+.fa-skype:before {
+  content: "";
+}
+
+/* line 398, sass/fonts/_icons.scss */
+.fa-foursquare:before {
+  content: "";
+}
+
+/* line 399, sass/fonts/_icons.scss */
+.fa-trello:before {
+  content: "";
+}
+
+/* line 400, sass/fonts/_icons.scss */
+.fa-female:before {
+  content: "";
+}
+
+/* line 401, sass/fonts/_icons.scss */
+.fa-male:before {
+  content: "";
+}
+
+/* line 402, sass/fonts/_icons.scss */
+.fa-gittip:before,
+.fa-gratipay:before {
+  content: "";
+}
+
+/* line 404, sass/fonts/_icons.scss */
+.fa-sun-o:before {
+  content: "";
+}
+
+/* line 405, sass/fonts/_icons.scss */
+.fa-moon-o:before {
+  content: "";
+}
+
+/* line 406, sass/fonts/_icons.scss */
+.fa-archive:before {
+  content: "";
+}
+
+/* line 407, sass/fonts/_icons.scss */
+.fa-bug:before {
+  content: "";
+}
+
+/* line 408, sass/fonts/_icons.scss */
+.fa-vk:before {
+  content: "";
+}
+
+/* line 409, sass/fonts/_icons.scss */
+.fa-weibo:before {
+  content: "";
+}
+
+/* line 410, sass/fonts/_icons.scss */
+.fa-renren:before {
+  content: "";
+}
+
+/* line 411, sass/fonts/_icons.scss */
+.fa-pagelines:before {
+  content: "";
+}
+
+/* line 412, sass/fonts/_icons.scss */
+.fa-stack-exchange:before {
+  content: "";
+}
+
+/* line 413, sass/fonts/_icons.scss */
+.fa-arrow-circle-o-right:before {
+  content: "";
+}
+
+/* line 414, sass/fonts/_icons.scss */
+.fa-arrow-circle-o-left:before {
+  content: "";
+}
+
+/* line 415, sass/fonts/_icons.scss */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "";
+}
+
+/* line 417, sass/fonts/_icons.scss */
+.fa-dot-circle-o:before {
+  content: "";
+}
+
+/* line 418, sass/fonts/_icons.scss */
+.fa-wheelchair:before {
+  content: "";
+}
+
+/* line 419, sass/fonts/_icons.scss */
+.fa-vimeo-square:before {
+  content: "";
+}
+
+/* line 420, sass/fonts/_icons.scss */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "";
+}
+
+/* line 422, sass/fonts/_icons.scss */
+.fa-plus-square-o:before {
+  content: "";
+}
+
+/* line 423, sass/fonts/_icons.scss */
+.fa-space-shuttle:before {
+  content: "";
+}
+
+/* line 424, sass/fonts/_icons.scss */
+.fa-slack:before {
+  content: "";
+}
+
+/* line 425, sass/fonts/_icons.scss */
+.fa-envelope-square:before {
+  content: "";
+}
+
+/* line 426, sass/fonts/_icons.scss */
+.fa-wordpress:before {
+  content: "";
+}
+
+/* line 427, sass/fonts/_icons.scss */
+.fa-openid:before {
+  content: "";
+}
+
+/* line 428, sass/fonts/_icons.scss */
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "";
+}
+
+/* line 431, sass/fonts/_icons.scss */
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "";
+}
+
+/* line 433, sass/fonts/_icons.scss */
+.fa-yahoo:before {
+  content: "";
+}
+
+/* line 434, sass/fonts/_icons.scss */
+.fa-google:before {
+  content: "";
+}
+
+/* line 435, sass/fonts/_icons.scss */
+.fa-reddit:before {
+  content: "";
+}
+
+/* line 436, sass/fonts/_icons.scss */
+.fa-reddit-square:before {
+  content: "";
+}
+
+/* line 437, sass/fonts/_icons.scss */
+.fa-stumbleupon-circle:before {
+  content: "";
+}
+
+/* line 438, sass/fonts/_icons.scss */
+.fa-stumbleupon:before {
+  content: "";
+}
+
+/* line 439, sass/fonts/_icons.scss */
+.fa-delicious:before {
+  content: "";
+}
+
+/* line 440, sass/fonts/_icons.scss */
+.fa-digg:before {
+  content: "";
+}
+
+/* line 441, sass/fonts/_icons.scss */
+.fa-pied-piper-pp:before {
+  content: "";
+}
+
+/* line 442, sass/fonts/_icons.scss */
+.fa-pied-piper-alt:before {
+  content: "";
+}
+
+/* line 443, sass/fonts/_icons.scss */
+.fa-drupal:before {
+  content: "";
+}
+
+/* line 444, sass/fonts/_icons.scss */
+.fa-joomla:before {
+  content: "";
+}
+
+/* line 445, sass/fonts/_icons.scss */
+.fa-language:before {
+  content: "";
+}
+
+/* line 446, sass/fonts/_icons.scss */
+.fa-fax:before {
+  content: "";
+}
+
+/* line 447, sass/fonts/_icons.scss */
+.fa-building:before {
+  content: "";
+}
+
+/* line 448, sass/fonts/_icons.scss */
+.fa-child:before {
+  content: "";
+}
+
+/* line 449, sass/fonts/_icons.scss */
+.fa-paw:before {
+  content: "";
+}
+
+/* line 450, sass/fonts/_icons.scss */
+.fa-spoon:before {
+  content: "";
+}
+
+/* line 451, sass/fonts/_icons.scss */
+.fa-cube:before {
+  content: "";
+}
+
+/* line 452, sass/fonts/_icons.scss */
+.fa-cubes:before {
+  content: "";
+}
+
+/* line 453, sass/fonts/_icons.scss */
+.fa-behance:before {
+  content: "";
+}
+
+/* line 454, sass/fonts/_icons.scss */
+.fa-behance-square:before {
+  content: "";
+}
+
+/* line 455, sass/fonts/_icons.scss */
+.fa-steam:before {
+  content: "";
+}
+
+/* line 456, sass/fonts/_icons.scss */
+.fa-steam-square:before {
+  content: "";
+}
+
+/* line 457, sass/fonts/_icons.scss */
+.fa-recycle:before {
+  content: "";
+}
+
+/* line 458, sass/fonts/_icons.scss */
+.fa-automobile:before,
+.fa-car:before {
+  content: "";
+}
+
+/* line 460, sass/fonts/_icons.scss */
+.fa-cab:before,
+.fa-taxi:before {
+  content: "";
+}
+
+/* line 462, sass/fonts/_icons.scss */
+.fa-tree:before {
+  content: "";
+}
+
+/* line 463, sass/fonts/_icons.scss */
+.fa-spotify:before {
+  content: "";
+}
+
+/* line 464, sass/fonts/_icons.scss */
+.fa-deviantart:before {
+  content: "";
+}
+
+/* line 465, sass/fonts/_icons.scss */
+.fa-soundcloud:before {
+  content: "";
+}
+
+/* line 466, sass/fonts/_icons.scss */
+.fa-database:before {
+  content: "";
+}
+
+/* line 467, sass/fonts/_icons.scss */
+.fa-file-pdf-o:before {
+  content: "";
+}
+
+/* line 468, sass/fonts/_icons.scss */
+.fa-file-word-o:before {
+  content: "";
+}
+
+/* line 469, sass/fonts/_icons.scss */
+.fa-file-excel-o:before {
+  content: "";
+}
+
+/* line 470, sass/fonts/_icons.scss */
+.fa-file-powerpoint-o:before {
+  content: "";
+}
+
+/* line 471, sass/fonts/_icons.scss */
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "";
+}
+
+/* line 474, sass/fonts/_icons.scss */
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "";
+}
+
+/* line 476, sass/fonts/_icons.scss */
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "";
+}
+
+/* line 478, sass/fonts/_icons.scss */
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "";
+}
+
+/* line 480, sass/fonts/_icons.scss */
+.fa-file-code-o:before {
+  content: "";
+}
+
+/* line 481, sass/fonts/_icons.scss */
+.fa-vine:before {
+  content: "";
+}
+
+/* line 482, sass/fonts/_icons.scss */
+.fa-codepen:before {
+  content: "";
+}
+
+/* line 483, sass/fonts/_icons.scss */
+.fa-jsfiddle:before {
+  content: "";
+}
+
+/* line 484, sass/fonts/_icons.scss */
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "";
+}
+
+/* line 489, sass/fonts/_icons.scss */
+.fa-circle-o-notch:before {
+  content: "";
+}
+
+/* line 490, sass/fonts/_icons.scss */
+.fa-ra:before,
+.fa-resistance:before,
+.fa-rebel:before {
+  content: "";
+}
+
+/* line 493, sass/fonts/_icons.scss */
+.fa-ge:before,
+.fa-empire:before {
+  content: "";
+}
+
+/* line 495, sass/fonts/_icons.scss */
+.fa-git-square:before {
+  content: "";
+}
+
+/* line 496, sass/fonts/_icons.scss */
+.fa-git:before {
+  content: "";
+}
+
+/* line 497, sass/fonts/_icons.scss */
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
+.fa-hacker-news:before {
+  content: "";
+}
+
+/* line 500, sass/fonts/_icons.scss */
+.fa-tencent-weibo:before {
+  content: "";
+}
+
+/* line 501, sass/fonts/_icons.scss */
+.fa-qq:before {
+  content: "";
+}
+
+/* line 502, sass/fonts/_icons.scss */
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "";
+}
+
+/* line 504, sass/fonts/_icons.scss */
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "";
+}
+
+/* line 506, sass/fonts/_icons.scss */
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "";
+}
+
+/* line 508, sass/fonts/_icons.scss */
+.fa-history:before {
+  content: "";
+}
+
+/* line 509, sass/fonts/_icons.scss */
+.fa-circle-thin:before {
+  content: "";
+}
+
+/* line 510, sass/fonts/_icons.scss */
+.fa-header:before {
+  content: "";
+}
+
+/* line 511, sass/fonts/_icons.scss */
+.fa-paragraph:before {
+  content: "";
+}
+
+/* line 512, sass/fonts/_icons.scss */
+.fa-sliders:before {
+  content: "";
+}
+
+/* line 513, sass/fonts/_icons.scss */
+.fa-share-alt:before {
+  content: "";
+}
+
+/* line 514, sass/fonts/_icons.scss */
+.fa-share-alt-square:before {
+  content: "";
+}
+
+/* line 515, sass/fonts/_icons.scss */
+.fa-bomb:before {
+  content: "";
+}
+
+/* line 516, sass/fonts/_icons.scss */
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: "";
+}
+
+/* line 518, sass/fonts/_icons.scss */
+.fa-tty:before {
+  content: "";
+}
+
+/* line 519, sass/fonts/_icons.scss */
+.fa-binoculars:before {
+  content: "";
+}
+
+/* line 520, sass/fonts/_icons.scss */
+.fa-plug:before {
+  content: "";
+}
+
+/* line 521, sass/fonts/_icons.scss */
+.fa-slideshare:before {
+  content: "";
+}
+
+/* line 522, sass/fonts/_icons.scss */
+.fa-twitch:before {
+  content: "";
+}
+
+/* line 523, sass/fonts/_icons.scss */
+.fa-yelp:before {
+  content: "";
+}
+
+/* line 524, sass/fonts/_icons.scss */
+.fa-newspaper-o:before {
+  content: "";
+}
+
+/* line 525, sass/fonts/_icons.scss */
+.fa-wifi:before {
+  content: "";
+}
+
+/* line 526, sass/fonts/_icons.scss */
+.fa-calculator:before {
+  content: "";
+}
+
+/* line 527, sass/fonts/_icons.scss */
+.fa-paypal:before {
+  content: "";
+}
+
+/* line 528, sass/fonts/_icons.scss */
+.fa-google-wallet:before {
+  content: "";
+}
+
+/* line 529, sass/fonts/_icons.scss */
+.fa-cc-visa:before {
+  content: "";
+}
+
+/* line 530, sass/fonts/_icons.scss */
+.fa-cc-mastercard:before {
+  content: "";
+}
+
+/* line 531, sass/fonts/_icons.scss */
+.fa-cc-discover:before {
+  content: "";
+}
+
+/* line 532, sass/fonts/_icons.scss */
+.fa-cc-amex:before {
+  content: "";
+}
+
+/* line 533, sass/fonts/_icons.scss */
+.fa-cc-paypal:before {
+  content: "";
+}
+
+/* line 534, sass/fonts/_icons.scss */
+.fa-cc-stripe:before {
+  content: "";
+}
+
+/* line 535, sass/fonts/_icons.scss */
+.fa-bell-slash:before {
+  content: "";
+}
+
+/* line 536, sass/fonts/_icons.scss */
+.fa-bell-slash-o:before {
+  content: "";
+}
+
+/* line 537, sass/fonts/_icons.scss */
+.fa-trash:before {
+  content: "";
+}
+
+/* line 538, sass/fonts/_icons.scss */
+.fa-copyright:before {
+  content: "";
+}
+
+/* line 539, sass/fonts/_icons.scss */
+.fa-at:before {
+  content: "";
+}
+
+/* line 540, sass/fonts/_icons.scss */
+.fa-eyedropper:before {
+  content: "";
+}
+
+/* line 541, sass/fonts/_icons.scss */
+.fa-paint-brush:before {
+  content: "";
+}
+
+/* line 542, sass/fonts/_icons.scss */
+.fa-birthday-cake:before {
+  content: "";
+}
+
+/* line 543, sass/fonts/_icons.scss */
+.fa-area-chart:before {
+  content: "";
+}
+
+/* line 544, sass/fonts/_icons.scss */
+.fa-pie-chart:before {
+  content: "";
+}
+
+/* line 545, sass/fonts/_icons.scss */
+.fa-line-chart:before {
+  content: "";
+}
+
+/* line 546, sass/fonts/_icons.scss */
+.fa-lastfm:before {
+  content: "";
+}
+
+/* line 547, sass/fonts/_icons.scss */
+.fa-lastfm-square:before {
+  content: "";
+}
+
+/* line 548, sass/fonts/_icons.scss */
+.fa-toggle-off:before {
+  content: "";
+}
+
+/* line 549, sass/fonts/_icons.scss */
+.fa-toggle-on:before {
+  content: "";
+}
+
+/* line 550, sass/fonts/_icons.scss */
+.fa-bicycle:before {
+  content: "";
+}
+
+/* line 551, sass/fonts/_icons.scss */
+.fa-bus:before {
+  content: "";
+}
+
+/* line 552, sass/fonts/_icons.scss */
+.fa-ioxhost:before {
+  content: "";
+}
+
+/* line 553, sass/fonts/_icons.scss */
+.fa-angellist:before {
+  content: "";
+}
+
+/* line 554, sass/fonts/_icons.scss */
+.fa-cc:before {
+  content: "";
+}
+
+/* line 555, sass/fonts/_icons.scss */
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: "";
+}
+
+/* line 558, sass/fonts/_icons.scss */
+.fa-meanpath:before {
+  content: "";
+}
+
+/* line 559, sass/fonts/_icons.scss */
+.fa-buysellads:before {
+  content: "";
+}
+
+/* line 560, sass/fonts/_icons.scss */
+.fa-connectdevelop:before {
+  content: "";
+}
+
+/* line 561, sass/fonts/_icons.scss */
+.fa-dashcube:before {
+  content: "";
+}
+
+/* line 562, sass/fonts/_icons.scss */
+.fa-forumbee:before {
+  content: "";
+}
+
+/* line 563, sass/fonts/_icons.scss */
+.fa-leanpub:before {
+  content: "";
+}
+
+/* line 564, sass/fonts/_icons.scss */
+.fa-sellsy:before {
+  content: "";
+}
+
+/* line 565, sass/fonts/_icons.scss */
+.fa-shirtsinbulk:before {
+  content: "";
+}
+
+/* line 566, sass/fonts/_icons.scss */
+.fa-simplybuilt:before {
+  content: "";
+}
+
+/* line 567, sass/fonts/_icons.scss */
+.fa-skyatlas:before {
+  content: "";
+}
+
+/* line 568, sass/fonts/_icons.scss */
+.fa-cart-plus:before {
+  content: "";
+}
+
+/* line 569, sass/fonts/_icons.scss */
+.fa-cart-arrow-down:before {
+  content: "";
+}
+
+/* line 570, sass/fonts/_icons.scss */
+.fa-diamond:before {
+  content: "";
+}
+
+/* line 571, sass/fonts/_icons.scss */
+.fa-ship:before {
+  content: "";
+}
+
+/* line 572, sass/fonts/_icons.scss */
+.fa-user-secret:before {
+  content: "";
+}
+
+/* line 573, sass/fonts/_icons.scss */
+.fa-motorcycle:before {
+  content: "";
+}
+
+/* line 574, sass/fonts/_icons.scss */
+.fa-street-view:before {
+  content: "";
+}
+
+/* line 575, sass/fonts/_icons.scss */
+.fa-heartbeat:before {
+  content: "";
+}
+
+/* line 576, sass/fonts/_icons.scss */
+.fa-venus:before {
+  content: "";
+}
+
+/* line 577, sass/fonts/_icons.scss */
+.fa-mars:before {
+  content: "";
+}
+
+/* line 578, sass/fonts/_icons.scss */
+.fa-mercury:before {
+  content: "";
+}
+
+/* line 579, sass/fonts/_icons.scss */
+.fa-intersex:before,
+.fa-transgender:before {
+  content: "";
+}
+
+/* line 581, sass/fonts/_icons.scss */
+.fa-transgender-alt:before {
+  content: "";
+}
+
+/* line 582, sass/fonts/_icons.scss */
+.fa-venus-double:before {
+  content: "";
+}
+
+/* line 583, sass/fonts/_icons.scss */
+.fa-mars-double:before {
+  content: "";
+}
+
+/* line 584, sass/fonts/_icons.scss */
+.fa-venus-mars:before {
+  content: "";
+}
+
+/* line 585, sass/fonts/_icons.scss */
+.fa-mars-stroke:before {
+  content: "";
+}
+
+/* line 586, sass/fonts/_icons.scss */
+.fa-mars-stroke-v:before {
+  content: "";
+}
+
+/* line 587, sass/fonts/_icons.scss */
+.fa-mars-stroke-h:before {
+  content: "";
+}
+
+/* line 588, sass/fonts/_icons.scss */
+.fa-neuter:before {
+  content: "";
+}
+
+/* line 589, sass/fonts/_icons.scss */
+.fa-genderless:before {
+  content: "";
+}
+
+/* line 590, sass/fonts/_icons.scss */
+.fa-facebook-official:before {
+  content: "";
+}
+
+/* line 591, sass/fonts/_icons.scss */
+.fa-pinterest-p:before {
+  content: "";
+}
+
+/* line 592, sass/fonts/_icons.scss */
+.fa-whatsapp:before {
+  content: "";
+}
+
+/* line 593, sass/fonts/_icons.scss */
+.fa-server:before {
+  content: "";
+}
+
+/* line 594, sass/fonts/_icons.scss */
+.fa-user-plus:before {
+  content: "";
+}
+
+/* line 595, sass/fonts/_icons.scss */
+.fa-user-times:before {
+  content: "";
+}
+
+/* line 596, sass/fonts/_icons.scss */
+.fa-hotel:before,
+.fa-bed:before {
+  content: "";
+}
+
+/* line 598, sass/fonts/_icons.scss */
+.fa-viacoin:before {
+  content: "";
+}
+
+/* line 599, sass/fonts/_icons.scss */
+.fa-train:before {
+  content: "";
+}
+
+/* line 600, sass/fonts/_icons.scss */
+.fa-subway:before {
+  content: "";
+}
+
+/* line 601, sass/fonts/_icons.scss */
+.fa-medium:before {
+  content: "";
+}
+
+/* line 602, sass/fonts/_icons.scss */
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: "";
+}
+
+/* line 604, sass/fonts/_icons.scss */
+.fa-optin-monster:before {
+  content: "";
+}
+
+/* line 605, sass/fonts/_icons.scss */
+.fa-opencart:before {
+  content: "";
+}
+
+/* line 606, sass/fonts/_icons.scss */
+.fa-expeditedssl:before {
+  content: "";
+}
+
+/* line 607, sass/fonts/_icons.scss */
+.fa-battery-4:before,
+.fa-battery:before,
+.fa-battery-full:before {
+  content: "";
+}
+
+/* line 610, sass/fonts/_icons.scss */
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: "";
+}
+
+/* line 612, sass/fonts/_icons.scss */
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: "";
+}
+
+/* line 614, sass/fonts/_icons.scss */
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: "";
+}
+
+/* line 616, sass/fonts/_icons.scss */
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: "";
+}
+
+/* line 618, sass/fonts/_icons.scss */
+.fa-mouse-pointer:before {
+  content: "";
+}
+
+/* line 619, sass/fonts/_icons.scss */
+.fa-i-cursor:before {
+  content: "";
+}
+
+/* line 620, sass/fonts/_icons.scss */
+.fa-object-group:before {
+  content: "";
+}
+
+/* line 621, sass/fonts/_icons.scss */
+.fa-object-ungroup:before {
+  content: "";
+}
+
+/* line 622, sass/fonts/_icons.scss */
+.fa-sticky-note:before {
+  content: "";
+}
+
+/* line 623, sass/fonts/_icons.scss */
+.fa-sticky-note-o:before {
+  content: "";
+}
+
+/* line 624, sass/fonts/_icons.scss */
+.fa-cc-jcb:before {
+  content: "";
+}
+
+/* line 625, sass/fonts/_icons.scss */
+.fa-cc-diners-club:before {
+  content: "";
+}
+
+/* line 626, sass/fonts/_icons.scss */
+.fa-clone:before {
+  content: "";
+}
+
+/* line 627, sass/fonts/_icons.scss */
+.fa-balance-scale:before {
+  content: "";
+}
+
+/* line 628, sass/fonts/_icons.scss */
+.fa-hourglass-o:before {
+  content: "";
+}
+
+/* line 629, sass/fonts/_icons.scss */
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: "";
+}
+
+/* line 631, sass/fonts/_icons.scss */
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: "";
+}
+
+/* line 633, sass/fonts/_icons.scss */
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: "";
+}
+
+/* line 635, sass/fonts/_icons.scss */
+.fa-hourglass:before {
+  content: "";
+}
+
+/* line 636, sass/fonts/_icons.scss */
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: "";
+}
+
+/* line 638, sass/fonts/_icons.scss */
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: "";
+}
+
+/* line 640, sass/fonts/_icons.scss */
+.fa-hand-scissors-o:before {
+  content: "";
+}
+
+/* line 641, sass/fonts/_icons.scss */
+.fa-hand-lizard-o:before {
+  content: "";
+}
+
+/* line 642, sass/fonts/_icons.scss */
+.fa-hand-spock-o:before {
+  content: "";
+}
+
+/* line 643, sass/fonts/_icons.scss */
+.fa-hand-pointer-o:before {
+  content: "";
+}
+
+/* line 644, sass/fonts/_icons.scss */
+.fa-hand-peace-o:before {
+  content: "";
+}
+
+/* line 645, sass/fonts/_icons.scss */
+.fa-trademark:before {
+  content: "";
+}
+
+/* line 646, sass/fonts/_icons.scss */
+.fa-registered:before {
+  content: "";
+}
+
+/* line 647, sass/fonts/_icons.scss */
+.fa-creative-commons:before {
+  content: "";
+}
+
+/* line 648, sass/fonts/_icons.scss */
+.fa-gg:before {
+  content: "";
+}
+
+/* line 649, sass/fonts/_icons.scss */
+.fa-gg-circle:before {
+  content: "";
+}
+
+/* line 650, sass/fonts/_icons.scss */
+.fa-tripadvisor:before {
+  content: "";
+}
+
+/* line 651, sass/fonts/_icons.scss */
+.fa-odnoklassniki:before {
+  content: "";
+}
+
+/* line 652, sass/fonts/_icons.scss */
+.fa-odnoklassniki-square:before {
+  content: "";
+}
+
+/* line 653, sass/fonts/_icons.scss */
+.fa-get-pocket:before {
+  content: "";
+}
+
+/* line 654, sass/fonts/_icons.scss */
+.fa-wikipedia-w:before {
+  content: "";
+}
+
+/* line 655, sass/fonts/_icons.scss */
+.fa-safari:before {
+  content: "";
+}
+
+/* line 656, sass/fonts/_icons.scss */
+.fa-chrome:before {
+  content: "";
+}
+
+/* line 657, sass/fonts/_icons.scss */
+.fa-firefox:before {
+  content: "";
+}
+
+/* line 658, sass/fonts/_icons.scss */
+.fa-opera:before {
+  content: "";
+}
+
+/* line 659, sass/fonts/_icons.scss */
+.fa-internet-explorer:before {
+  content: "";
+}
+
+/* line 660, sass/fonts/_icons.scss */
+.fa-tv:before,
+.fa-television:before {
+  content: "";
+}
+
+/* line 662, sass/fonts/_icons.scss */
+.fa-contao:before {
+  content: "";
+}
+
+/* line 663, sass/fonts/_icons.scss */
+.fa-500px:before {
+  content: "";
+}
+
+/* line 664, sass/fonts/_icons.scss */
+.fa-amazon:before {
+  content: "";
+}
+
+/* line 665, sass/fonts/_icons.scss */
+.fa-calendar-plus-o:before {
+  content: "";
+}
+
+/* line 666, sass/fonts/_icons.scss */
+.fa-calendar-minus-o:before {
+  content: "";
+}
+
+/* line 667, sass/fonts/_icons.scss */
+.fa-calendar-times-o:before {
+  content: "";
+}
+
+/* line 668, sass/fonts/_icons.scss */
+.fa-calendar-check-o:before {
+  content: "";
+}
+
+/* line 669, sass/fonts/_icons.scss */
+.fa-industry:before {
+  content: "";
+}
+
+/* line 670, sass/fonts/_icons.scss */
+.fa-map-pin:before {
+  content: "";
+}
+
+/* line 671, sass/fonts/_icons.scss */
+.fa-map-signs:before {
+  content: "";
+}
+
+/* line 672, sass/fonts/_icons.scss */
+.fa-map-o:before {
+  content: "";
+}
+
+/* line 673, sass/fonts/_icons.scss */
+.fa-map:before {
+  content: "";
+}
+
+/* line 674, sass/fonts/_icons.scss */
+.fa-commenting:before {
+  content: "";
+}
+
+/* line 675, sass/fonts/_icons.scss */
+.fa-commenting-o:before {
+  content: "";
+}
+
+/* line 676, sass/fonts/_icons.scss */
+.fa-houzz:before {
+  content: "";
+}
+
+/* line 677, sass/fonts/_icons.scss */
+.fa-vimeo:before {
+  content: "";
+}
+
+/* line 678, sass/fonts/_icons.scss */
+.fa-black-tie:before {
+  content: "";
+}
+
+/* line 679, sass/fonts/_icons.scss */
+.fa-fonticons:before {
+  content: "";
+}
+
+/* line 680, sass/fonts/_icons.scss */
+.fa-reddit-alien:before {
+  content: "";
+}
+
+/* line 681, sass/fonts/_icons.scss */
+.fa-edge:before {
+  content: "";
+}
+
+/* line 682, sass/fonts/_icons.scss */
+.fa-credit-card-alt:before {
+  content: "";
+}
+
+/* line 683, sass/fonts/_icons.scss */
+.fa-codiepie:before {
+  content: "";
+}
+
+/* line 684, sass/fonts/_icons.scss */
+.fa-modx:before {
+  content: "";
+}
+
+/* line 685, sass/fonts/_icons.scss */
+.fa-fort-awesome:before {
+  content: "";
+}
+
+/* line 686, sass/fonts/_icons.scss */
+.fa-usb:before {
+  content: "";
+}
+
+/* line 687, sass/fonts/_icons.scss */
+.fa-product-hunt:before {
+  content: "";
+}
+
+/* line 688, sass/fonts/_icons.scss */
+.fa-mixcloud:before {
+  content: "";
+}
+
+/* line 689, sass/fonts/_icons.scss */
+.fa-scribd:before {
+  content: "";
+}
+
+/* line 690, sass/fonts/_icons.scss */
+.fa-pause-circle:before {
+  content: "";
+}
+
+/* line 691, sass/fonts/_icons.scss */
+.fa-pause-circle-o:before {
+  content: "";
+}
+
+/* line 692, sass/fonts/_icons.scss */
+.fa-stop-circle:before {
+  content: "";
+}
+
+/* line 693, sass/fonts/_icons.scss */
+.fa-stop-circle-o:before {
+  content: "";
+}
+
+/* line 694, sass/fonts/_icons.scss */
+.fa-shopping-bag:before {
+  content: "";
+}
+
+/* line 695, sass/fonts/_icons.scss */
+.fa-shopping-basket:before {
+  content: "";
+}
+
+/* line 696, sass/fonts/_icons.scss */
+.fa-hashtag:before {
+  content: "";
+}
+
+/* line 697, sass/fonts/_icons.scss */
+.fa-bluetooth:before {
+  content: "";
+}
+
+/* line 698, sass/fonts/_icons.scss */
+.fa-bluetooth-b:before {
+  content: "";
+}
+
+/* line 699, sass/fonts/_icons.scss */
+.fa-percent:before {
+  content: "";
+}
+
+/* line 700, sass/fonts/_icons.scss */
+.fa-gitlab:before {
+  content: "";
+}
+
+/* line 701, sass/fonts/_icons.scss */
+.fa-wpbeginner:before {
+  content: "";
+}
+
+/* line 702, sass/fonts/_icons.scss */
+.fa-wpforms:before {
+  content: "";
+}
+
+/* line 703, sass/fonts/_icons.scss */
+.fa-envira:before {
+  content: "";
+}
+
+/* line 704, sass/fonts/_icons.scss */
+.fa-universal-access:before {
+  content: "";
+}
+
+/* line 705, sass/fonts/_icons.scss */
+.fa-wheelchair-alt:before {
+  content: "";
+}
+
+/* line 706, sass/fonts/_icons.scss */
+.fa-question-circle-o:before {
+  content: "";
+}
+
+/* line 707, sass/fonts/_icons.scss */
+.fa-blind:before {
+  content: "";
+}
+
+/* line 708, sass/fonts/_icons.scss */
+.fa-audio-description:before {
+  content: "";
+}
+
+/* line 709, sass/fonts/_icons.scss */
+.fa-volume-control-phone:before {
+  content: "";
+}
+
+/* line 710, sass/fonts/_icons.scss */
+.fa-braille:before {
+  content: "";
+}
+
+/* line 711, sass/fonts/_icons.scss */
+.fa-assistive-listening-systems:before {
+  content: "";
+}
+
+/* line 712, sass/fonts/_icons.scss */
+.fa-asl-interpreting:before,
+.fa-american-sign-language-interpreting:before {
+  content: "";
+}
+
+/* line 714, sass/fonts/_icons.scss */
+.fa-deafness:before,
+.fa-hard-of-hearing:before,
+.fa-deaf:before {
+  content: "";
+}
+
+/* line 717, sass/fonts/_icons.scss */
+.fa-glide:before {
+  content: "";
+}
+
+/* line 718, sass/fonts/_icons.scss */
+.fa-glide-g:before {
+  content: "";
+}
+
+/* line 719, sass/fonts/_icons.scss */
+.fa-signing:before,
+.fa-sign-language:before {
+  content: "";
+}
+
+/* line 721, sass/fonts/_icons.scss */
+.fa-low-vision:before {
+  content: "";
+}
+
+/* line 722, sass/fonts/_icons.scss */
+.fa-viadeo:before {
+  content: "";
+}
+
+/* line 723, sass/fonts/_icons.scss */
+.fa-viadeo-square:before {
+  content: "";
+}
+
+/* line 724, sass/fonts/_icons.scss */
+.fa-snapchat:before {
+  content: "";
+}
+
+/* line 725, sass/fonts/_icons.scss */
+.fa-snapchat-ghost:before {
+  content: "";
+}
+
+/* line 726, sass/fonts/_icons.scss */
+.fa-snapchat-square:before {
+  content: "";
+}
+
+/* line 727, sass/fonts/_icons.scss */
+.fa-pied-piper:before {
+  content: "";
+}
+
+/* line 728, sass/fonts/_icons.scss */
+.fa-first-order:before {
+  content: "";
+}
+
+/* line 729, sass/fonts/_icons.scss */
+.fa-yoast:before {
+  content: "";
+}
+
+/* line 730, sass/fonts/_icons.scss */
+.fa-themeisle:before {
+  content: "";
+}
+
+/* line 731, sass/fonts/_icons.scss */
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+  content: "";
+}
+
+/* line 733, sass/fonts/_icons.scss */
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: "";
+}
+
+/* line 735, sass/fonts/_icons.scss */
+.fa-handshake-o:before {
+  content: "";
+}
+
+/* line 736, sass/fonts/_icons.scss */
+.fa-envelope-open:before {
+  content: "";
+}
+
+/* line 737, sass/fonts/_icons.scss */
+.fa-envelope-open-o:before {
+  content: "";
+}
+
+/* line 738, sass/fonts/_icons.scss */
+.fa-linode:before {
+  content: "";
+}
+
+/* line 739, sass/fonts/_icons.scss */
+.fa-address-book:before {
+  content: "";
+}
+
+/* line 740, sass/fonts/_icons.scss */
+.fa-address-book-o:before {
+  content: "";
+}
+
+/* line 741, sass/fonts/_icons.scss */
+.fa-vcard:before,
+.fa-address-card:before {
+  content: "";
+}
+
+/* line 743, sass/fonts/_icons.scss */
+.fa-vcard-o:before,
+.fa-address-card-o:before {
+  content: "";
+}
+
+/* line 745, sass/fonts/_icons.scss */
+.fa-user-circle:before {
+  content: "";
+}
+
+/* line 746, sass/fonts/_icons.scss */
+.fa-user-circle-o:before {
+  content: "";
+}
+
+/* line 747, sass/fonts/_icons.scss */
+.fa-user-o:before {
+  content: "";
+}
+
+/* line 748, sass/fonts/_icons.scss */
+.fa-id-badge:before {
+  content: "";
+}
+
+/* line 749, sass/fonts/_icons.scss */
+.fa-drivers-license:before,
+.fa-id-card:before {
+  content: "";
+}
+
+/* line 751, sass/fonts/_icons.scss */
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
+  content: "";
+}
+
+/* line 753, sass/fonts/_icons.scss */
+.fa-quora:before {
+  content: "";
+}
+
+/* line 754, sass/fonts/_icons.scss */
+.fa-free-code-camp:before {
+  content: "";
+}
+
+/* line 755, sass/fonts/_icons.scss */
+.fa-telegram:before {
+  content: "";
+}
+
+/* line 756, sass/fonts/_icons.scss */
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
+  content: "";
+}
+
+/* line 759, sass/fonts/_icons.scss */
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
+  content: "";
+}
+
+/* line 761, sass/fonts/_icons.scss */
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
+  content: "";
+}
+
+/* line 763, sass/fonts/_icons.scss */
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
+  content: "";
+}
+
+/* line 765, sass/fonts/_icons.scss */
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
+  content: "";
+}
+
+/* line 767, sass/fonts/_icons.scss */
+.fa-shower:before {
+  content: "";
+}
+
+/* line 768, sass/fonts/_icons.scss */
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
+  content: "";
+}
+
+/* line 771, sass/fonts/_icons.scss */
+.fa-podcast:before {
+  content: "";
+}
+
+/* line 772, sass/fonts/_icons.scss */
+.fa-window-maximize:before {
+  content: "";
+}
+
+/* line 773, sass/fonts/_icons.scss */
+.fa-window-minimize:before {
+  content: "";
+}
+
+/* line 774, sass/fonts/_icons.scss */
+.fa-window-restore:before {
+  content: "";
+}
+
+/* line 775, sass/fonts/_icons.scss */
+.fa-times-rectangle:before,
+.fa-window-close:before {
+  content: "";
+}
+
+/* line 777, sass/fonts/_icons.scss */
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
+  content: "";
+}
+
+/* line 779, sass/fonts/_icons.scss */
+.fa-bandcamp:before {
+  content: "";
+}
+
+/* line 780, sass/fonts/_icons.scss */
+.fa-grav:before {
+  content: "";
+}
+
+/* line 781, sass/fonts/_icons.scss */
+.fa-etsy:before {
+  content: "";
+}
+
+/* line 782, sass/fonts/_icons.scss */
+.fa-imdb:before {
+  content: "";
+}
+
+/* line 783, sass/fonts/_icons.scss */
+.fa-ravelry:before {
+  content: "";
+}
+
+/* line 784, sass/fonts/_icons.scss */
+.fa-eercast:before {
+  content: "";
+}
+
+/* line 785, sass/fonts/_icons.scss */
+.fa-microchip:before {
+  content: "";
+}
+
+/* line 786, sass/fonts/_icons.scss */
+.fa-snowflake-o:before {
+  content: "";
+}
+
+/* line 787, sass/fonts/_icons.scss */
+.fa-superpowers:before {
+  content: "";
+}
+
+/* line 788, sass/fonts/_icons.scss */
+.fa-wpexplorer:before {
+  content: "";
+}
+
+/* line 789, sass/fonts/_icons.scss */
+.fa-meetup:before {
+  content: "";
+}
+
+/* line 4, sass/fonts/_screen-reader.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* line 51, sass/fonts/_mixins.scss */
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* line 1, sass/template/_communicationSidebar.scss */
+.communicationsSidebar {
+  margin-top: 8%;
+  z-index: 2;
+  position: relative;
+  background: white;
+}
+/* line 6, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form {
+  width: 100%;
+  border-radius: 8px;
+}
+/* line 9, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form.contactForm {
+  border: none;
+  position: relative;
+  margin: 15px 0 0 0;
+}
+/* line 13, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form.contactForm input,
+.communicationsSidebar form.contactForm textarea {
+  border-radius: 8px;
+  padding: 6px 0 6px 12px;
+  border: 2px solid #dfdfdf;
+  font-size: 1.7em;
+  font-family: OpenSans-Regular;
+  color: #b5b5b5;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+/* line 25, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form.contactForm textarea {
+  min-height: 100px;
+  resize: none;
+  outline: none;
+}
+/* line 30, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form.contactForm button {
+  position: absolute;
+  bottom: 3px;
+  right: -1px;
+  width: 20%;
+  display: inline-block;
+  height: 39px;
+  border-radius: 8px 0 8px 0;
+  margin-right: 1px;
+  background: #3b8576;
+}
+/* line 40, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form.contactForm button i {
+  font-size: 1.8em;
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  color: white;
+  cursor: pointer;
+}
+/* line 50, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form .searchForm {
+  box-sizing: border-box;
+  position: relative;
+}
+/* line 54, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form .searchForm input#s {
+  border-radius: 8px;
+  padding: 6px 20% 6px 15px;
+  font-size: 1.7em;
+  font-family: OpenSans-Regular;
+  color: #b5b5b5;
+  width: 100%;
+  border: 2px solid #dfdfdf;
+  -moz-appearance: none;
+  /* older firefox */
+  -webkit-appearance: none;
+  /* safari, chrome */
+  appearance: none;
+  /* rest */
+}
+/* line 67, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form .searchForm button {
+  width: 20%;
+  position: absolute;
+  top: 0px;
+  right: -2px;
+  display: inline-block;
+  height: 39px;
+  border-radius: 0 8px 8px 0;
+  margin-right: 1px;
+  background: #3b8576;
+  cursor: pointer;
+}
+/* line 81, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form .searchForm button i.fa-search.fa:before {
+  font-size: 1.8em;
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  color: white;
+  cursor: pointer;
+}
+/* line 94, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form#searchform {
+  margin: 40px 0;
+  border: none;
+}
+/* line 99, sass/template/_communicationSidebar.scss */
+.communicationsSidebar span {
+  margin-top: 25px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.7em;
+  color: #145745;
+  font-family: OpenSans-Bold;
+}
+/* line 106, sass/template/_communicationSidebar.scss */
+.communicationsSidebar span#infoContUs {
+  display: none;
+  font-family: OpenSans;
+  border: 1px solid gray;
+  border-radius: 20px;
+  text-transform: none;
+  color: black;
+  margin: 5px 0;
+  padding: 0 10px;
+}
+/* line 116, sass/template/_communicationSidebar.scss */
+.communicationsSidebar span#infoSubcr {
+  display: none;
+  font-family: OpenSans;
+  border: 1px solid gray;
+  border-radius: 20px;
+  text-transform: none;
+  color: black;
+  margin: 5px 0;
+  padding: 0 10px;
+}
+/* line 127, sass/template/_communicationSidebar.scss */
+.communicationsSidebar ul {
+  margin: 45px 0 50px 0;
+  padding-left: 0;
+}
+/* line 131, sass/template/_communicationSidebar.scss */
+.communicationsSidebar ul a.green-btn {
+  margin: 15px auto;
+  display: block;
+  font-size: 2em;
+}
+/* line 136, sass/template/_communicationSidebar.scss */
+.communicationsSidebar ul a li {
+  list-style-type: none;
+  font-family: OpenSans-Bold;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  border-bottom: 1px solid #a7b4a0;
+}
+/* line 143, sass/template/_communicationSidebar.scss */
+.communicationsSidebar ul a li:hover {
+  padding-left: 10px;
+  transition: all .3s;
+  opacity: .8;
+}
+/* line 150, sass/template/_communicationSidebar.scss */
+.communicationsSidebar ul a:first-child li {
+  position: relative;
+  padding-right: 25px;
+}
+/* line 153, sass/template/_communicationSidebar.scss */
+.communicationsSidebar ul a:first-child li:hover {
+  padding-left: 10px;
+  transition: all .3s;
+  opacity: .8;
+}
+/* line 158, sass/template/_communicationSidebar.scss */
+.communicationsSidebar ul a:first-child li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url("assets/images/icons/novusdetox+.png") no-repeat;
+  width: 23px;
+  height: 23px;
+  right: 0;
+}
+/* line 170, sass/template/_communicationSidebar.scss */
+.communicationsSidebar ul a:nth-child(2) li {
+  margin: 15px 0;
+  padding: 15px 0;
+}
+/* line 173, sass/template/_communicationSidebar.scss */
+.communicationsSidebar ul a:nth-child(2) li:hover {
+  padding-left: 10px;
+  transition: all .3s;
+  opacity: .8;
+}
+/* line 182, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .socialNetwBlock {
+  padding: 40px 0 30px 0;
+  display: flex;
+  justify-content: space-around;
+}
+/* line 189, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .socialNetwBlock a i.fa:before {
+  font-size: 3em;
+  color: #bbb9ba;
+  cursor: pointer;
+}
+/* line 199, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .socialNetwBlock a:hover i.fa:before {
+  font-size: 3em;
+  color: #d6d4d5;
+  cursor: pointer;
+}
+/* line 212, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form {
+  width: 100%;
+  border: 2px solid #dfdfdf;
+  border-radius: 8px;
+}
+/* line 216, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form.secondForm {
+  margin-top: 20px;
+  border: none;
+}
+/* line 220, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form .emailForm {
+  box-sizing: border-box;
+  position: relative;
+}
+/* line 224, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form .emailForm input[type='email'] {
+  border-radius: 8px;
+  padding: 6px 20% 6px 15px;
+  font-size: 1.7em;
+  font-family: OpenSans-Regular;
+  color: #b5b5b5;
+  width: 100%;
+  border: 2px solid #dfdfdf;
+}
+/* line 234, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form .emailForm button {
+  width: 20%;
+  position: absolute;
+  top: 0;
+  right: -2px;
+  display: inline-block;
+  height: 39px;
+  border-radius: 0 8px 8px 0;
+  margin-right: 1px;
+  background: #3b8576;
+  cursor: pointer;
+}
+/* line 248, sass/template/_communicationSidebar.scss */
+.communicationsSidebar form .emailForm button i.fa-check.fa:before {
+  font-size: 1.8em;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  color: white;
+  cursor: pointer;
+}
+/* line 264, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .insuranceCompanies .slideBarCom div {
+  height: 50px;
+}
+/* line 269, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .categories-sidebar-links {
+  margin: 20px 0;
+}
+/* line 271, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .categories-sidebar-links h2 {
+  text-transform: uppercase;
+}
+/* line 274, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .categories-sidebar-links ul {
+  margin: 5px 0;
+}
+/* line 276, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .categories-sidebar-links ul li {
+  list-style-type: none;
+}
+/* line 278, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .categories-sidebar-links ul li:hover {
+  padding-left: 10px;
+  transition: all .3s;
+  opacity: .8;
+}
+/* line 284, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .categories-sidebar-links ul li:nth-of-type(5):hover {
+  padding-left: 0;
+}
+/* line 288, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .categories-sidebar-links ul li a {
+  font-size: 1.2em;
+  font-family: OpenSans-Bold;
+  border-bottom: 1px solid #a7b4a0;
+  text-transform: uppercase;
+  margin: 5px 0;
+  display: block;
+}
+/* line 296, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .categories-sidebar-links ul li ul {
+  overflow: hidden;
+  margin: 0 0 0 20px;
+  max-height: 0;
+  transition: all 0.5s;
+}
+/* line 301, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .categories-sidebar-links ul li ul.hidden {
+  max-height: 1000px;
+}
+/* line 306, sass/template/_communicationSidebar.scss */
+.communicationsSidebar .categories-sidebar-links ul li ul li:nth-of-type(5):hover {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  /* line 5, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  /* line 10, sass/responsive/pages/_single.scss */
+  main .contentBox .center .communicationsSidebar {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 915px) {
+  /* line 29, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .getHelp .helpBlock {
+    width: 100%;
+    padding: 0;
+    margin: 2% 0;
+    text-align: center;
+  }
+  /* line 34, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .getHelp .helpBlock .detoxProgram {
+    margin: 0 auto;
+  }
+  /* line 36, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .getHelp .helpBlock .detoxProgram .flex {
+    text-align: center;
+  }
+  /* line 40, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .getHelp .helpBlock ul {
+    margin-top: 2%;
+  }
+  /* line 42, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .getHelp .helpBlock ul li {
+    text-align: center;
+  }
+  /* line 46, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .getHelp .helpBlock:last-child {
+    border: none;
+  }
+}
+@media screen and (max-width: 825px) {
+  /* line 63, sass/responsive/pages/_single.scss */
+  main .contentBox .aboutSide .mainContent p iframe {
+    float: none;
+    margin-right: 0px;
+  }
+  /* line 73, sass/responsive/pages/_single.scss */
+  main .mainContent p iframe {
+    width: 100%;
+  }
+  /* line 81, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .callBar {
+    text-align: center;
+  }
+  /* line 83, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .callBar .green-btn-phone {
+    float: none;
+    display: inline-block;
+  }
+  /* line 87, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .callBar .textWrap {
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  /* line 95, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .blog .articlesWrap article {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 107, sass/responsive/pages/_single.scss */
+  .fixedBanner {
+    display: block;
+  }
+
+  /* line 113, sass/responsive/pages/_single.scss */
+  main .mainContent .contentBlockP .greenbox {
+    height: auto;
+  }
+  /* line 117, sass/responsive/pages/_single.scss */
+  main .mainContent .contentBlockP .ls-wp-container h1 {
+    font-size: 2em !important;
+  }
+  /* line 124, sass/responsive/pages/_single.scss */
+  main .mainContent table tr td {
+    padding: 2px;
+  }
+  /* line 126, sass/responsive/pages/_single.scss */
+  main .mainContent table tr td img {
+    width: 10px;
+    height: 9px;
+    margin: 0;
+  }
+  /* line 138, sass/responsive/pages/_single.scss */
+  main .contentBox .detoxProgram .infoBlock p {
+    font-size: 1.5em;
+  }
+  /* line 141, sass/responsive/pages/_single.scss */
+  main .contentBox .detoxProgram .infoBlock a {
+    font-size: 1.2em;
+  }
+  /* line 151, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .blog .articlesWrap {
+    flex-direction: column;
+  }
+  /* line 153, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .blog .articlesWrap article {
+    flex-basis: 100%;
+    margin-top: 2%;
+    margin-bottom: 20px;
+  }
+  /* line 158, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .blog .articlesWrap article a:after {
+    right: 0;
+    margin: 0 auto;
+    display: block;
+  }
+  /* line 173, sass/responsive/pages/_single.scss */
+  main .why-novus-block .center .why-novus-items .novus-logo-item {
+    display: none;
+  }
+  /* line 176, sass/responsive/pages/_single.scss */
+  main .why-novus-block .center .why-novus-items .novus-content-item {
+    max-width: 500px;
+    min-width: 250px;
+    width: 100%;
+  }
+  /* line 187, sass/responsive/pages/_single.scss */
+  main .programs-bottom-block .center .programs-bottom-items .programs-bottom-photo-item {
+    display: none;
+  }
+  /* line 190, sass/responsive/pages/_single.scss */
+  main .programs-bottom-block .center .programs-bottom-items .programs-bottom-content-item {
+    width: 100%;
+    height: auto;
+  }
+  /* line 193, sass/responsive/pages/_single.scss */
+  main .programs-bottom-block .center .programs-bottom-items .programs-bottom-content-item a {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 205, sass/responsive/pages/_single.scss */
+  main .mainContent img {
+    float: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  /* line 216, sass/responsive/pages/_single.scss */
+  main .mainContent .contentBlockP .greenbox img {
+    width: 220px;
+    height: 140px;
+    margin: 0;
+  }
+  /* line 223, sass/responsive/pages/_single.scss */
+  main .mainContent div {
+    width: 100%;
+  }
+  /* line 225, sass/responsive/pages/_single.scss */
+  main .mainContent div input {
+    width: 100%;
+  }
+  /* line 230, sass/responsive/pages/_single.scss */
+  main .mainContent p iframe {
+    width: 100%;
+    height: 220px;
+  }
+  /* line 241, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .mainContent p iframe {
+    width: 100%;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 390px) {
+  /* line 259, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .callBar .green-btn-phone {
+    font: 300 2.8em "OpenSans-Regular";
+    padding: 2px 10px 2px 40px;
+  }
+  /* line 262, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .callBar .green-btn-phone:after {
+    width: 25px;
+    height: 25px;
+    top: 10px;
+  }
+  /* line 272, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .getHelp .helpBlock .detoxProgram .flex {
+    flex-basis: 100%;
+  }
+  /* line 274, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .getHelp .helpBlock .detoxProgram .flex.infoBlock {
+    width: 100%;
+    margin: 0;
+  }
+  /* line 278, sass/responsive/pages/_single.scss */
+  main .contentBox .center .contentSide .getHelp .helpBlock .detoxProgram .flex.infoBlock a:after {
+    right: 0;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 1100px) {
+  /* line 6, sass/responsive/pages/_program.scss */
+  main .contentBox .programSide .detoxSolution .videoPr {
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  /* line 13, sass/responsive/pages/_program.scss */
+  main .contentBox .programSide .detoxQuestion .detoxLinks {
+    /*a {
+      &:nth-child(6) {
+        &:after {
+          display: block;
+        }
+      }
+      &:nth-child(7) {
+        &:after {
+          display: none;
+        }
+      }
+    }*/
+  }
+  /* line 30, sass/responsive/pages/_program.scss */
+  main .contentBox .center .programSide {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 43, sass/responsive/pages/_program.scss */
+  main .cta-block:before {
+    right: 50px;
+    width: 120px;
+  }
+  /* line 49, sass/responsive/pages/_program.scss */
+  main .cta-block .content-cta span:first-of-type {
+    font-size: 2em;
+  }
+  /* line 52, sass/responsive/pages/_program.scss */
+  main .cta-block .content-cta span:nth-of-type(2) {
+    font-size: 1em;
+  }
+  /* line 56, sass/responsive/pages/_program.scss */
+  main .cta-block .content-cta a {
+    font-size: 2em !important;
+  }
+  /* line 60, sass/responsive/pages/_program.scss */
+  main .cta-block .photo-cta {
+    width: 169px;
+  }
+  /* line 65, sass/responsive/pages/_program.scss */
+  main .topProgramLine .btnWrap {
+    padding: 18% 0 0 0;
+  }
+  /* line 73, sass/responsive/pages/_program.scss */
+  main .contentBox .programSide .detoxQuestion .detoxLinks a {
+    /*&:nth-child(1) {
+      &:after {
+        display: none;
+      }
+    }
+    &:nth-child(5) {
+      &:after {
+        display: none;
+      }
+    }
+    &:nth-child(6) {
+      &:after {
+        display: block;
+      }
+    }*/
+  }
+  /* line 93, sass/responsive/pages/_program.scss */
+  main .contentBox .programSide span.titlePr {
+    text-align: center;
+  }
+  /* line 98, sass/responsive/pages/_program.scss */
+  main .contentBox .programSide .detoxSolution .videoPr {
+    padding-bottom: 41.25%;
+  }
+}
+@media screen and (max-width: 580px) {
+  /* line 110, sass/responsive/pages/_program.scss */
+  main .cta-block:before {
+    display: none;
+  }
+  /* line 113, sass/responsive/pages/_program.scss */
+  main .cta-block .content-cta {
+    padding-right: 0;
+  }
+  /* line 116, sass/responsive/pages/_program.scss */
+  main .cta-block .photo-cta {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  /* line 130, sass/responsive/pages/_program.scss */
+  main .cta-block .content-cta span:first-of-type {
+    font-size: 1.5em;
+  }
+  /* line 138, sass/responsive/pages/_program.scss */
+  main .topProgramLine .btnWrap {
+    padding: 25% 0 0 0;
+    justify-content: center;
+  }
+  /* line 141, sass/responsive/pages/_program.scss */
+  main .topProgramLine .btnWrap .sqr-btn {
+    font-size: 1.6em;
+    padding: 7px 15px;
+  }
+  /* line 145, sass/responsive/pages/_program.scss */
+  main .topProgramLine .btnWrap .sqr-btn:first-child:after {
+    right: -16px;
+    top: 7px;
+    padding-top: 0;
+    width: 25px;
+    height: 25px;
+  }
+  /* line 159, sass/responsive/pages/_program.scss */
+  main .contentBox .programSide .bestPrograms ul {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+  /* line 167, sass/responsive/pages/_program.scss */
+  main .contentBox .programSide .detoxQuestion .detoxLinks a {
+    font-size: 1.1em;
+  }
+  /* line 171, sass/responsive/pages/_program.scss */
+  main .contentBox .programSide .detoxQuestion p {
+    font-size: 3em;
+  }
+  /* line 176, sass/responsive/pages/_program.scss */
+  main .contentBox .programSide .detoxSolution .videoPr {
+    padding-bottom: 69.25%;
+  }
+  /* line 181, sass/responsive/pages/_program.scss */
+  main .contentBox .programSide .getBackNumber .contentItems {
+    justify-content: space-around;
+  }
+  /* line 184, sass/responsive/pages/_program.scss */
+  main .contentBox .programSide .getBackNumber .contentItems .contentItem p {
+    margin-bottom: 25px;
+  }
+  /* line 188, sass/responsive/pages/_program.scss */
+  main .contentBox .programSide .getBackNumber .contentItems .contentItem a.phoneBlock {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 2560px) {
+  /* line 6, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .novusDifference .differenceVideo {
+    padding-bottom: 28.25%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 17, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide {
+    width: 100%;
+  }
+  /* line 20, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .novusDifference .differenceVideo {
+    padding-bottom: 27.25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 33, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .novusDifference .differenceContent {
+    width: 100%;
+  }
+  /* line 36, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .novusDifference .differenceVideo {
+    padding-bottom: 37.25%;
+  }
+  /* line 41, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .novusPersonal .personalInfo {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  /* line 55, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .novusPersonal .personalInfo p {
+    font-size: 1.4em;
+  }
+  /* line 59, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .novusPersonal .personalInfo span:first-child {
+    font-size: 2.8em;
+  }
+  /* line 62, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .novusPersonal .personalInfo span:nth-child(2) {
+    font-size: 1.3em;
+  }
+  /* line 69, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .phoneNovus .contentItems {
+    justify-content: space-around;
+  }
+  /* line 72, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .phoneNovus .contentItems .contentItem p {
+    margin-bottom: 25px;
+  }
+  /* line 76, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .phoneNovus .contentItems .contentItem a.phoneBlock {
+    font-size: 2.5em;
+  }
+  /* line 84, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .novusDifference .differenceVideo {
+    padding-bottom: 52.25%;
+  }
+  /* line 89, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .novusDifference .differenceContent ul li {
+    font-size: 2em;
+  }
+  /* line 98, sass/responsive/pages/_aboutUs.scss */
+  main .postHeader.aboutPage {
+    display: block;
+  }
+  /* line 101, sass/responsive/pages/_aboutUs.scss */
+  main .postHeader.aboutPage .flex.picSide {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 115, sass/responsive/pages/_aboutUs.scss */
+  main .contentBox .aboutSide .novusDifference .differenceVideo {
+    padding-bottom: 55.25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 8, sass/responsive/pages/_blog.scss */
+  main .contentBox .center .aboutSide .blogItems .blogItem .blogPhoto {
+    max-width: 270px;
+    height: 270px;
+    margin: 0 20px 10px 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  /* line 25, sass/responsive/pages/_blog.scss */
+  main .navigation .pagination .page-numbers {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #d5d5d5;
+    display: inline-block;
+    padding-top: 3px;
+    font-size: 1em;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  /* line 34, sass/responsive/pages/_blog.scss */
+  main .navigation .pagination .page-numbers:last-child {
+    margin-right: 0;
+  }
+  /* line 37, sass/responsive/pages/_blog.scss */
+  main .navigation .pagination .page-numbers.next {
+    border: none;
+    width: auto;
+    padding-top: 5px;
+  }
+  /* line 42, sass/responsive/pages/_blog.scss */
+  main .navigation .pagination .page-numbers.prev {
+    border: none;
+    width: auto;
+    padding-top: 5px;
+  }
+  /* line 47, sass/responsive/pages/_blog.scss */
+  main .navigation .pagination .page-numbers.current {
+    color: white;
+    background: #3b8576;
+    border: none;
+    padding-top: 5px;
+  }
+  /* line 61, sass/responsive/pages/_blog.scss */
+  main .contentBox .center .aboutSide .blogItems .blogItem .blogPhoto {
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media screen and (max-width: 1790px) {
+  /* line 6, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 39%;
+  }
+}
+@media screen and (max-width: 1725px) {
+  /* line 20, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 38%;
+  }
+}
+@media screen and (max-width: 1620px) {
+  /* line 34, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 36.5%;
+  }
+}
+@media screen and (max-width: 1530px) {
+  /* line 48, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 35.5%;
+  }
+}
+@media screen and (max-width: 1430px) {
+  /* line 59, sass/responsive/pages/_home.scss */
+  main .detoxProgram {
+    width: 100%;
+    max-width: 300px;
+    min-width: 260px;
+  }
+  /* line 63, sass/responsive/pages/_home.scss */
+  main .detoxProgram img {
+    height: 148px;
+  }
+  /* line 70, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 33.5%;
+  }
+}
+@media screen and (max-width: 1330px) {
+  /* line 84, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 32.5%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* line 98, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 36%;
+  }
+  /* line 101, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .prev {
+    left: 34%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* line 115, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 33%;
+  }
+  /* line 118, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .prev {
+    left: 34%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  /* line 130, sass/responsive/pages/_home.scss */
+  main .mainBanner .block {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1015px) {
+  /* line 144, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 43%;
+  }
+  /* line 147, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .prev {
+    left: 40%;
+  }
+  /* line 153, sass/responsive/pages/_home.scss */
+  main .programs {
+    background-attachment: fixed;
+  }
+  /* line 155, sass/responsive/pages/_home.scss */
+  main .programs .detoxProgram {
+    width: 100%;
+    max-width: inherit;
+    min-width: inherit;
+    display: block;
+    margin: 0 0 25px 0;
+  }
+  /* line 161, sass/responsive/pages/_home.scss */
+  main .programs .detoxProgram img {
+    width: auto;
+    height: auto;
+  }
+  /* line 165, sass/responsive/pages/_home.scss */
+  main .programs .detoxProgram .infoBlock {
+    min-height: 150px;
+  }
+  /* line 169, sass/responsive/pages/_home.scss */
+  main .programs .btnWrap {
+    margin: 10% 0;
+  }
+}
+@media screen and (max-width: 965px) {
+  /* line 182, sass/responsive/pages/_home.scss */
+  main .getHelp.forYou .textWrap:after, main .getHelp.forFriend .textWrap:after {
+    display: none;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* line 196, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 40%;
+  }
+  /* line 199, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .prev {
+    left: 38%;
+  }
+  /* line 207, sass/responsive/pages/_home.scss */
+  main .difference .center .differenceBlock {
+    width: 100%;
+    display: block;
+    margin: 0 0 15px 0;
+  }
+  /* line 214, sass/responsive/pages/_home.scss */
+  main .getHelp {
+    min-height: 900px;
+  }
+  /* line 218, sass/responsive/pages/_home.scss */
+  main .getHelp.forYou .textWrap, main .getHelp.forFriend .textWrap {
+    display: block;
+    width: 100%;
+    bottom: 0;
+    top: auto;
+    border-radius: 0;
+    min-height: 0;
+  }
+  /* line 225, sass/responsive/pages/_home.scss */
+  main .getHelp.forYou .textWrap:after, main .getHelp.forFriend .textWrap:after {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 239, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 31%;
+  }
+  /* line 242, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .prev {
+    left: 36%;
+  }
+  /* line 249, sass/responsive/pages/_home.scss */
+  main .tradeMarks .tradeMarkLogo {
+    width: 100%;
+    display: block;
+    margin: 0 auto 15px 0;
+  }
+  /* line 255, sass/responsive/pages/_home.scss */
+  main .green-btn-phone {
+    padding: 10px 25px 10px 45px;
+    font: 300 2.5em "OpenSans-Regular";
+  }
+  /* line 258, sass/responsive/pages/_home.scss */
+  main .green-btn-phone:after {
+    width: 25px;
+    height: 25px;
+    left: 15px;
+    top: 15px;
+    background-size: cover;
+  }
+  /* line 268, sass/responsive/pages/_home.scss */
+  main .programs .btnWrap a {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 535px) {
+  /* line 278, sass/responsive/pages/_home.scss */
+  main .sectionTitle {
+    font: 300 4.0em 'OpenSans-Bold';
+  }
+  /* line 283, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic {
+    height: 550px;
+    padding: 25px 50px 5% 50px;
+  }
+  /* line 286, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic h2 {
+    font: 300 4.0em/55px 'OpenSans-Bold';
+  }
+  /* line 289, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic .btnWrap {
+    padding: 5% 0 0 0;
+  }
+  /* line 291, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic .btnWrap .sqr-btn {
+    display: block;
+    width: 100%;
+    padding: 17px 40px;
+    margin: 5px auto;
+  }
+  /* line 296, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic .btnWrap .sqr-btn:first-child {
+    margin-right: auto;
+  }
+  /* line 298, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic .btnWrap .sqr-btn:first-child:after {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 45px;
+  }
+  /* line 308, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider {
+    margin: 0;
+  }
+  /* line 309, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 29%;
+  }
+  /* line 312, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .prev {
+    left: 33%;
+  }
+  /* line 322, sass/responsive/pages/_home.scss */
+  main .programs .detoxProgram .infoBlock p {
+    font: 300 2.0em 'OpenSans-Regular';
+  }
+}
+@media screen and (max-width: 425px) {
+  /* line 332, sass/responsive/pages/_home.scss */
+  .initSlick {
+    height: 190px;
+  }
+  /* line 334, sass/responsive/pages/_home.scss */
+  .initSlick iframe {
+    height: 184px;
+  }
+
+  /* line 340, sass/responsive/pages/_home.scss */
+  main .programs .detoxProgram {
+    width: 100%;
+    max-width: 300px;
+    min-width: 300px;
+    margin: 25px auto;
+  }
+  /* line 345, sass/responsive/pages/_home.scss */
+  main .programs .detoxProgram .infoBlock {
+    width: 200px;
+    min-height: inherit;
+    margin-left: 0;
+    margin-top: -1px;
+  }
+  /* line 353, sass/responsive/pages/_home.scss */
+  main .getHelp {
+    min-height: 700px;
+  }
+  /* line 355, sass/responsive/pages/_home.scss */
+  main .getHelp.forYou {
+    background-size: 150%;
+    background-position: 50% 35%;
+  }
+  /* line 359, sass/responsive/pages/_home.scss */
+  main .getHelp.forFriend {
+    background-position: 85% 14%;
+    background-size: 150%;
+  }
+  /* line 364, sass/responsive/pages/_home.scss */
+  main .getHelp .textWrap p {
+    font-size: 2em;
+  }
+  /* line 371, sass/responsive/pages/_home.scss */
+  main .programs .btnWrap a {
+    font-size: 1.3em;
+  }
+  /* line 379, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 25%;
+  }
+  /* line 382, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .prev {
+    left: 24%;
+  }
+  /* line 387, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic {
+    height: 390px;
+  }
+  /* line 389, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic h2 {
+    font-size: 3em;
+    line-height: 2;
+    width: 100%;
+  }
+  /* line 393, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic h2 p {
+    width: 100%;
+  }
+  /* line 401, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic .btnWrap a.sqr-btn:first-child:after {
+    padding-top: 6px;
+    top: 42px;
+  }
+  /* line 406, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic .btnWrap a.sqr-btn:nth-child(2) {
+    width: 80%;
+    margin-top: 12px;
+  }
+  /* line 414, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider {
+    height: 330px;
+  }
+  /* line 421, sass/responsive/pages/_home.scss */
+  main .isEasy .center .green-btn-phone {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 375px) {
+  /* line 433, sass/responsive/pages/_home.scss */
+  main .programs .btnWrap a {
+    font-size: 1em;
+    padding: 15px 15px;
+  }
+  /* line 442, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 16%;
+  }
+  /* line 445, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .prev {
+    left: 24%;
+  }
+  /* line 451, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic .btnWrap .sqr-btn {
+    font: 300 1.7em 'OpenSans-Regular';
+  }
+  /* line 454, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.pic .btnWrap .sqr-btn:first-child:after {
+    top: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 471, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .next {
+    right: 11%;
+  }
+  /* line 474, sass/responsive/pages/_home.scss */
+  main .mainBanner .block.slider .prev {
+    left: 15%;
+  }
+}
+/* line 36, sass/style.scss */
+.center {
+  max-width: 1340px;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* line 44, sass/style.scss */
+.clear-fix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 49, sass/style.scss */
+.clear-fix .fl {
+  float: left;
+}
+/* line 52, sass/style.scss */
+.clear-fix .fr {
+  float: right;
+}
+
+/* line 57, sass/style.scss */
+body.moved {
+  overflow: hidden;
+}
